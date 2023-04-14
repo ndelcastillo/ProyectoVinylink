@@ -1,0 +1,147 @@
+.sectionPortada {
+    width: 100%;
+
+    img {
+        width: 100vw;
+        height: 65vh;
+    }
+}
+
+.txtTitleStyle {
+    font-family: 'neueHaasMedium';
+    color: black;
+}
+
+.contendorStyle {
+    font-family: 'neueHaasMedium';
+    color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 100px;
+    // height: 100vh;
+}
+
+main {
+    .card {
+        border-radius: 10px 10px 0 0;
+        border-width: .1px;
+        border-color: lightgray;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+
+        .card-top {
+            .card-img-top {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .btnAgregarCarrito {
+                color: rgb(69, 69, 69);
+                font-size: 12px;
+                padding: 2px 4px;
+                font-family: 'neueHaasLight';
+                border-radius: 0 0 0 10px;
+                border-width: .1px;
+                border-color: lightgray;
+                opacity: calc(.9);
+                // background-color: rgb(140, 140, 140);
+
+                // i {
+                //     margin-top: 3px;
+                // }
+
+                &:hover {
+                    background-color: rgb(60, 129, 60);
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+            .btnEliminar {
+                color: rgb(69, 69, 69);
+                font-size: 12px;
+                padding: 2px 4px;
+                font-family: 'neueHaasLight';
+                border-radius: 0 0 10px 0;
+                border-width: .1px;
+                border-color: lightgray;
+                opacity: calc(.9);
+                // background-color: rgb(140, 140, 140);
+
+                // i {
+                //     margin-top: 3px;
+                // }
+
+                &:hover {
+                    background-color: rgb(255, 60, 60);
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+
+
+        .card-body {
+
+            .cardTitle {
+                display: flex;
+                flex-direction: row;
+
+                .cardName {
+                    font-family: 'neueHaasMedium';
+                    color: black;
+                }
+            }
+
+            .cardArtist {
+                font-family: 'neueHaasRoman';
+                color: black;
+                line-height: 10px;
+            }
+
+            .cardTxt {
+                list-style: none;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                line-height: 2px;
+
+                .cardYear {
+                    font-family: 'neueHaasLight';
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                }
+
+                .cardGenre {
+                    font-family: 'neueHaasLight';
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                    word-spacing: 2px;
+                }
+
+                .cardKind {
+                    font-family: 'neueHaasLight';
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                }
+            }
+
+            .cardTxtPrice {
+                list-style: none;
+                text-align: left;
+                // display: flex;
+                flex-direction: column;
+                justify-content: start;
+                line-height: 2px;
+
+                .cardPrice {
+                    display: flex;
+                    justify-content: end;
+                    font-family: 'neueHaasLightItalic';
+                    color: rgb(39, 39, 39);
+                }
+
+            }
+        }
+
+    }
+}

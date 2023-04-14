@@ -1,0 +1,54 @@
+//========== FONTS ==========
+$font: (
+    "headline": 'Lancelot',
+    "alternative1": 'ABeeZee'
+);
+
+//========== FONTSIZE ==========
+$fontSize: (
+    "heading0": 4.5rem,
+    //72px
+    "heading1": 3rem,
+    //48px
+    "heading1.5": 2.5rem,
+    //48px
+    "heading2": 2rem,
+    //32px
+    "heading3": 1.5rem,
+    //24px
+    "heading4": 1.125rem,
+    //18px
+    "paragraph": 1rem,
+    //16px 
+);
+
+//========== COLORS ==========
+$color: (
+    "primary1" : $primary1,
+    "primary2" : $primary2,
+    "primary3" : $primary3,
+    "secondary1" : $secondary1,
+    "secondary2" : $secondary2,
+    "secondary3" : $secondary3,
+    "accent1" : $accent1,
+    "accent2" : $accent2,
+    "accent3" : $accent3,
+
+    "grey100" : $grey100,
+    "grey200" : $grey200,
+    "grey300" : $grey300,
+    "grey400" : $grey400,
+    "grey500" : $grey500,
+    "grey700" : $grey700,
+    "grey900" : $grey900,
+
+    "black" : $black,
+    "white" : $white,
+);
+
+//========== GRADIENTS ==========
+$gradient1: radial-gradient(circle, rgba(130, 191, 4, 1) 0%, rgba(223, 179, 0, 1) 73%);
+
+$gradient2: linear-gradient(129deg, rgba(140, 45, 124, 1) 0%, rgba(223, 179, 0, 1) 100%);
+
+$gradient3: linear-gradient(170deg, rgba(116, 235, 213, 1) 0%, rgba(159, 172, 230, 1) 100%);
