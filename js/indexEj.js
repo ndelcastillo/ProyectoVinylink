@@ -51,3 +51,29 @@
 // inputEdad.onkeyup = () => {
 //     console.log  ("Se oprimió un boton, evento up")
 // }
+
+
+//========== LOCALSTORAGE DE EJEMPLO
+//===== OBJETO A JSON > .STRINGIFY
+// const users = [
+//     { user1: "ndelcastillo", password: "tierri95" },
+//     { user2: "martaNuk", password: "hola1234" },
+// ]
+// const enJSON = JSON.stringify(users);
+
+// console.log(enJSON);
+// console.log(typeof users)
+// console.log(typeof enJSON)
+
+// localStorage.setItem("users", enJSON)
+
+//===== JSON A OBJETO > .PARSE
+// const enJSON = `{"id":1,"name":"ndelcastillo","password":"tierri95"}`
+// const users1 = JSON.parse(enJSON)
+
+// console.log(typeof enJSON)
+// console.log(typeof users1)
+// console.log(users1.password)
+
+// const users2 = JSON.parse(localStorage.getItem("users1"));
+// console.log(users2.id)

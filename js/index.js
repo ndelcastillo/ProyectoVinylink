@@ -98,9 +98,7 @@ for (const productos of listaProductos) {
         <div class = "card position-relative" style="width:17rem">
             <div class="card-top">
                 <img src=${productos.img} class="card-img-top" alt="coverAlbum">
-                <button type="button" class="btn btnAgregarCarrito shadow-sm btn-outline-secondary position-absolute top-100 end-50 start-0"><span>Agregar al carrito</span>
-                </button>
-                <button type="button" class="btn btnEliminar shadow-sm btn-outline-secondary position-absolute top-100 end-0 start-50"><span>Eliminar</span>
+                <button type="button" class="btn btnAgregarCarrito shadow-sm btn-outline-secondary position-absolute top-100 end-0 start-0"><span>Agregar al carrito</span>
                 </button>
            </div>
             <div class="card-body">
@@ -126,14 +124,19 @@ for (const productos of listaProductos) {
 // columnaBorrar.remove()
 
 
-//===================== OPC 2
-//===== Agregar elemento <div>
-let container = document.getElementById("contenedor");
-container.innerHTML =
-    "<h1>Shop</h1>"
-// ===== Agregar class
-container.className = "contendorStyle"
-//===== Modificar texto
-// container.innerText = "My Name"
-//===== Eliminar texto
-// container.remove()
+//========== guardo en el localSTorage mi array de objetos listaProductos en formato JSON
+// let listaProductosJSON = JSON.stringify(listaProductos);
+
+// console.log(listaProductosJSON);
+// console.log(typeof listaProductos)
+// console.log(typeof listaProductosJSON)
+
+// localStorage.setItem("arrayProductos", listaProductosJSON);
+
+
+//========== traigo del localSTorage mi JSON listaProductos en formato objeto
+let productosAlmacenados = localStorage.getItem("arrayProductos");
+console.log (typeof productosAlmacenados, productosAlmacenados);
+
+let productosArray = JSON.parse(productosAlmacenados);
+console.log(typeof productosArray, productosArray)

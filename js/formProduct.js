@@ -110,9 +110,7 @@ function pintarProductos() {
             <div class = "card position-relative" style="width:17rem">
                 <div class="card-top">
                     <img class="w-100" src=${producto.img}>
-                    <button type="button" class="btn btnAgregarCarrito shadow-sm btn-outline-secondary position-absolute top-100 end-50 start-0"><span>Agregar al carrito</span>
-                    </button>
-                    <button type="button" class="btn btnEliminar shadow-sm btn-outline-secondary position-absolute top-100 end-0 start-50" id="botonEliminar-${producto.id}"><span>Eliminar</span>
+                    <button type="button" class="btn btnEliminar shadow-sm btn-outline-secondary position-absolute top-100 end-0 start-0" id="botonEliminar-${producto.id}"><span>Eliminar</span>
                     </button>
                </div>
                 <div class="card-body">
@@ -144,4 +142,15 @@ function main() {
 }
 
 main();
-console.log(main)
+
+
+//===== Agregar elemento <div>
+let container = document.getElementById("contenedor");
+container.innerHTML =
+    "<h1>My Collection</h1>"
+// ===== Agregar class
+container.className = "contendorStyle"
+//===== Modificar texto
+// container.innerText = "My Name"
+//===== Eliminar texto
+// container.remove()

@@ -16,9 +16,10 @@
 @import 'layout/navigation';
 @import 'layout/sideBar';
 
-@import 'pages/contact';
 @import 'pages/index';
+@import 'pages/collection';
 @import 'pages/shop';
+@import 'pages/user';
 
 @import 'vendors/bootstrap';
 
@@ -27,6 +28,7 @@
 @import 'base/settings';
 @import 'base/typography';
 
-@import 'queries/contact';
 @import 'queries/index';
+@import 'queries/collection';
 @import 'queries/shop';
+@import 'queries/user';
