@@ -98,8 +98,7 @@ for (const productos of listaProductos) {
         <div class = "card position-relative" style="width:17rem">
             <div class="card-top">
                 <img src=${productos.img} class="card-img-top" alt="coverAlbum">
-                <button type="button" class="btn btnAgregarCarrito shadow-sm btn-outline-secondary position-absolute top-100 end-0 start-0"><span>Agregar al carrito</span>
-                </button>
+                <button type="button" id=boton${productos.id} class="btn btnAgregarCarrito shadow-sm btn-outline-secondary position-absolute top-100 end-0 start-0">Add to cart</button>
            </div>
             <div class="card-body">
                 <div class="cardTitle">
@@ -118,25 +117,43 @@ for (const productos of listaProductos) {
         </div>`;
 
     contenedorProductos.append(column)
+
+    const boton = document.getElementById(`boton${productos.id}`)
+    boton.addEventListener('click', () => {
+          Toastify({
+            text: `"${productos.nombre}" added to cart`,
+            duration: 3000,
+            close: true,
+            gravity: "bottom", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                color: "white",
+                background: "rgb(60, 129, 60)",
+            },
+            onClick: function () { } // Callback after click
+        }).showToast();
+    })
+    // // ========== BORRAR UNA CARD
+    // let columnaBorrar = document.getElementById("columna-1")
+    // columnaBorrar.remove()
+
+
+
+    //========== GUARDO EN EL LOCALSTORAGE MI ARRAY DE OBJETOS LISTAPRODUCTOS EN FORMATO JSON 
+    let listaProductosJSON = JSON.stringify(listaProductos);
+
+    // console.log(listaProductosJSON);
+    // console.log(typeof listaProductos)
+    // console.log(typeof listaProductosJSON)
+
+    localStorage.setItem("arrayProductos", listaProductosJSON);
+
+    //========== TRAIGO DEL LOCALSTORAGENMI JSON LISTAPRODUCTOS EN FORMATO OBJETO
+    let productosAlmacenados = localStorage.getItem("arrayProductos");
+    // console.log (typeof productosAlmacenados, productosAlmacenados);
+
+    let productosArray = JSON.parse(productosAlmacenados);
+    console.log(typeof productosArray, productosArray)
+
 }
-// // ========== Borrar una card
-// let columnaBorrar = document.getElementById("columna-1")
-// columnaBorrar.remove()
-
-
-//========== guardo en el localSTorage mi array de objetos listaProductos en formato JSON
-// let listaProductosJSON = JSON.stringify(listaProductos);
-
-// console.log(listaProductosJSON);
-// console.log(typeof listaProductos)
-// console.log(typeof listaProductosJSON)
-
-// localStorage.setItem("arrayProductos", listaProductosJSON);
-
-
-//========== traigo del localSTorage mi JSON listaProductos en formato objeto
-let productosAlmacenados = localStorage.getItem("arrayProductos");
-console.log (typeof productosAlmacenados, productosAlmacenados);
-
-let productosArray = JSON.parse(productosAlmacenados);
-console.log(typeof productosArray, productosArray)

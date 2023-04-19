@@ -5,13 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <!-- BOXICONS-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- SWEETALERT2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- TOASTIFY-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- LUXON-->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+    <!-- CSS-->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/images/logo/opc2.ico" type="image/x-icon">
     <title>Vinylink</title>
 </head>
 
@@ -107,7 +117,8 @@
                                         accept="image/*" required>
                                 </div>
                                 <div class="mb-4 me-2 d-grid gap-2">
-                                    <button type="submit" class="btn btn-dark btn-sm">Add Vinyl</button>
+                                    <button type="submit" id="btnAddVinyl" class="btn btn-dark btn-sm">Add
+                                        Vinyl</button>
                                 </div>
                             </form>
                         </div>
@@ -118,23 +129,55 @@
     </section>
     <main class="collectionMain">
         <div class="container mt-5 mb-5">
-            <div class="row me-3">
+            <!-- <div class="row me-3">
                 <div class="col-lg-12 offset-lg-0 d-flex justify-content-end">
                     <div id="contenedor"></div>
+                </div>
+            </div> -->
+            <div class="row me-3">
+                <div class="col-lg-12 offset-lg-0 d-flex justify-content-end">
+                    <div class="contendorStyle">
+                        <h1>My Collection</h1>
+                    </div>
                 </div>
             </div>
             <div class="row me-3">
                 <div class="col-lg-12 offset-lg-0 boxIconsEvents">
                     <div class="">
-                        <button type="button" id="clearStorage" class="btn btn-dark btnClear"><i
+                        <button type="button" id="btnLimpiarStorage" class="btn btn-dark btnClear"><i
                                 class='bx bx-trash'></i></button>
                     </div>
                     <div class="ms-2">
-                        <button type="button" id="btnAddVinylSidebar" class="btn btn-dark btnAdd"> <i
+                        <button type="button" id="btnOpenSidebar" class="btn btn-dark btnAdd"> <i
                                 class='bx bx-plus-circle'></i></button>
                     </div>
                 </div>
             </div>
+            <!-- <div class="row me-3 mt-3">
+                <div class="col-lg-12 d-flex justify-content-end">
+                    <div id="contenedorUsuario" hidden>
+                        <p id="textoUsuario">Bienvenido:</p>
+                    </div>
+                    <div id="contenedorIdentificacion">
+                        <h2>Identificate</h2>
+                        <form id="formularioIdentificacion">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div>
+                                        <label class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="inputUsuario" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex align-items-end">
+                                    <button type="submit" class="btn btn-secondary">
+                                        Identificarse
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
             <div class="row me-1">
                 <div class="col-lg-12 offset-lg-0">
                     <div id="contenedorFormProducto" class="row"></div>
@@ -142,6 +185,53 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row row1">
+                <div class="col-lg-4 col-6 col1">
+                    <ul>
+                        <li class="liTitle mb-4">Help</li>
+                        <li><a href="#">F.A.Q.</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 d-lg-block d-none col2">
+                    <ul>
+                        <li class="liTitle mb-4">Our Story</li>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sequi id explicabo
+                                officia ex reprehenderit magni eveniet fugit, commodi dolorum distinctio tenetur
+                                accusamus
+                                nobis voluptatum sunt sint iure! Illum, tempora.</a></li>
+                        <li class="redesSociales">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class='bx bxl-facebook bx-sm me-3'></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter bx-sm me-3'></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class='bx bxl-instagram bx-sm me-3'></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i
+                                    class='bx bxl-youtube bx-sm me-3'></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-6 col3">
+                    <ul>
+                        <li class="liTitle mb-4">Information</li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Distribution</a></li>
+                        <li><a href="#">Submissions</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- TOASTIFY-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- SWEETALERT2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JS -->
     <script src="../js/formProduct.js"></script>
     <script src="../js/sideBar.js"></script>
 </body>

@@ -1,0 +1,105 @@
+footer {
+    margin-top: 120px;
+    background-color: rgb(240, 240, 240);
+    // height: 30vh;
+    padding: 70px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .row1 {
+        .col1 {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-top: 10px;
+
+                    .liTitle {
+                        color: rgb(39, 39, 39);
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(160, 160, 160);
+
+                        &:hover {
+                            color: rgb(39, 39, 39);
+                        }
+                    }
+                }
+            }
+        }
+
+        .col2 {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-top: 5px;
+                    line-height: 30px;
+
+                    .liTitle {
+                        color: rgb(39, 39, 39);
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(160, 160, 160);
+                    }
+
+                }
+
+                .redesSociales {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    margin-top: 30px;
+
+                    a i {
+                        color: rgb(160, 160, 160);
+
+                        &:hover {
+                            color: rgb(39, 39, 39);
+                        }
+                    }
+                }
+            }
+        }
+
+        .col3 {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-top: 10px;
+
+                    .liTitle {
+                        color: rgb(39, 39, 39);
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(160, 160, 160);
+
+                        &:hover {
+                            color: rgb(39, 39, 39);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

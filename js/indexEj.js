@@ -77,3 +77,67 @@
 
 // const users2 = JSON.parse(localStorage.getItem("users1"));
 // console.log(users2.id)
+
+
+//========== TITLE COLLECTION
+//===== Agregar elemento <div>
+// let container = document.getElementById("contenedor");
+// container.innerHTML =
+//     "<h1>My Collection</h1>"
+// ===== Agregar class
+// container.className = "contendorStyle"
+//===== Modificar texto
+// container.innerText = "My Name"
+//===== Eliminar texto
+// container.remove()
+
+
+
+//===================== FECHAS
+// console.log(new Date())
+
+// const cumpleNico = new Date(1995, 11, 17, 00, 00, 00)
+// let cumpleNicoString = new Date("December 17, 1995 00:00:00")
+// console.log(cumpleNico)
+// console.log(cumpleNicoString)
+
+// const cumpleSanti = new Date(1997,0,28)
+// console.log (cumpleSanti)
+
+// const cumpleMama = new Date(1962,7,4)
+// console.log (cumpleMama)
+
+// const cumpleAna = new Date(1989,1,14)
+// console.log (cumpleAna)
+
+// //==========VALORES SINGULARES DE UNA FECHA
+// const hoy = new Date()
+// console.log(`El día de hoy es ${hoy}`)
+// console.log(`El día de hoy es ${hoy.getDay()}`)
+// console.log(`El mes de hoy es ${hoy.getMonth()}`)
+// console.log(`El año de hoy es ${hoy.getFullYear()}`)
+
+// //==========FORMATOS DE FECHA A PARTIR DE UN CONSTRUCTOR
+// const hoyCumple = new Date("December 17, 1995")
+// console.log(hoy.toDateString())
+// console.log(hoy.toLocaleString())
+// console.log(hoy.toLocaleDateString())
+// console.log(hoy.toTimeString())
+
+// //==========FECHA DE NACIMIENTO
+// const fechaActual = new Date ();
+// const milisegundosPorDia = 86400000;
+
+// let dia = parseInt (prompt("Ingresa tu dia de nacimiento"));
+// let mes = parseInt (prompt("Ingresa tu mes de nacimiento"));
+// let anio = parseInt (prompt("Ingresa tu año de nacimiento"));
+
+// const cumpleanios = new Date (anio, mes - 1, dia);
+// const diferenciaDias = (fechaActual - cumpleanios) / milisegundosPorDia;
+// const diferenciaAnios = diferenciaDias / 365;
+
+// // alert(`Naciste hace ${diferenciaAnios} años`)
+// alert(`Naciste hace ${Math.floor(diferenciaAnios)} años`) // ESTE ES EL CORRECTO
+// // alert(`Naciste hace ${Math.ceil(diferenciaAnios)} años`)
+
+

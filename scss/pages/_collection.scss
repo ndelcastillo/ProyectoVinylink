@@ -1,4 +1,6 @@
 .collectionMain {
+    height: 100%;
+
     .contendorStyle {
         font-family: 'neueHaasMedium';
         color: rgb(39, 39, 39);
@@ -55,27 +57,8 @@
         .card-top {
             .card-img-top {
                 border-radius: 10px 10px 0 0;
-            }
-
-            .btnAgregarCarrito {
-                color: rgb(69, 69, 69);
-                font-size: 12px;
-                padding: 2px 4px;
-                font-family: 'neueHaasLight';
-                border-radius: 0 0 0 10px;
-                border-width: .1px;
-                border-color: lightgray;
-                opacity: calc(.9);
-                // background-color: rgb(140, 140, 140);
-
-                // i {
-                //     margin-top: 3px;
-                // }
-
-                &:hover {
-                    background-color: rgb(60, 129, 60);
-                    color: rgb(255, 255, 255);
-                }
+                height: 280px;
+                width: 100%;
             }
 
             .btnEliminar {
@@ -83,7 +66,7 @@
                 font-size: 12px;
                 padding: 2px 4px;
                 font-family: 'neueHaasLight';
-                border-radius: 0 0 10px 0;
+                border-radius: 0 0 10px 10px;
                 border-width: .1px;
                 border-color: lightgray;
                 opacity: calc(.9);
@@ -148,18 +131,20 @@
             }
 
             .cardTxtPrice {
-                list-style: none;
-                text-align: left;
-                // display: flex;
-                flex-direction: column;
-                justify-content: start;
-                line-height: 2px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .cardId {
+                    font-family: 'neueHaasLight';
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                }
 
                 .cardPrice {
-                    display: flex;
-                    justify-content: end;
                     font-family: 'neueHaasLightItalic';
                     color: rgb(39, 39, 39);
+                    font-size: .9rem;
                 }
 
             }

@@ -1,3 +1,64 @@
+footer {
+  margin-top: 120px;
+  background-color: #f0f0f0;
+  padding: 70px;
+  display: flex;
+  justify-content: space-evenly; }
+  footer .row1 .col1 {
+    display: flex;
+    align-items: start;
+    justify-content: center; }
+    footer .row1 .col1 ul {
+      list-style: none; }
+      footer .row1 .col1 ul li {
+        margin-top: 10px; }
+        footer .row1 .col1 ul li .liTitle {
+          color: #272727; }
+        footer .row1 .col1 ul li a {
+          text-decoration: none;
+          color: #a0a0a0; }
+          footer .row1 .col1 ul li a:hover {
+            color: #272727; }
+  footer .row1 .col2 {
+    display: flex;
+    align-items: start;
+    justify-content: center; }
+    footer .row1 .col2 ul {
+      list-style: none; }
+      footer .row1 .col2 ul li {
+        margin-top: 5px;
+        line-height: 30px; }
+        footer .row1 .col2 ul li .liTitle {
+          color: #272727; }
+        footer .row1 .col2 ul li a {
+          text-decoration: none;
+          color: #a0a0a0; }
+      footer .row1 .col2 ul .redesSociales {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-top: 30px; }
+        footer .row1 .col2 ul .redesSociales a i {
+          color: #a0a0a0; }
+          footer .row1 .col2 ul .redesSociales a i:hover {
+            color: #272727; }
+  footer .row1 .col3 {
+    display: flex;
+    align-items: start;
+    justify-content: center; }
+    footer .row1 .col3 ul {
+      list-style: none; }
+      footer .row1 .col3 ul li {
+        margin-top: 10px; }
+        footer .row1 .col3 ul li .liTitle {
+          color: #272727; }
+        footer .row1 .col3 ul li a {
+          text-decoration: none;
+          color: #a0a0a0; }
+          footer .row1 .col3 ul li a:hover {
+            color: #272727; }
+
 .collectionSectionSidebar #sidebar {
   z-index: 1;
   position: fixed;
@@ -9,7 +70,6 @@
   .collectionSectionSidebar #sidebar .toggleBtn {
     position: absolute;
     left: 430px;
-    top: 40px;
     height: 100%;
     width: 17px;
     background-color: orange;
@@ -44,7 +104,7 @@
 .collectionSectionSidebar .form-control::placeholder {
   font-family: 'neueHaasLight'; }
 
-.collectionSectionSidebar .form-control::required {
+.collectionSectionSidebar .form-control:required {
   font-family: 'neueHaasLight'; }
 
 .inputFile {
@@ -122,13 +182,13 @@
   border-color: lightgray;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
   .indexMain .card .card-top .card-img-top {
-    border-radius: 10px 10px 0 0; }
+    border-radius: 10px 10px 0px 0px; }
   .indexMain .card .card-top .btnAgregarCarrito {
     color: #454545;
     font-size: 12px;
     padding: 2px 4px;
     font-family: 'neueHaasLight';
-    border-radius: 0 0 0 10px;
+    border-radius: 0 0 10px 10px;
     border-width: .1px;
     border-color: lightgray;
     opacity: calc(.9); }
@@ -189,123 +249,157 @@
       font-family: 'neueHaasLightItalic';
       color: #272727; }
 
-.collectionMain .contendorStyle {
-  font-family: 'neueHaasMedium';
-  color: #272727;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  margin-top: 100px; }
-
-.collectionMain .boxIconsEvents {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-  justify-content: end;
-  width: 100%;
-  text-align: end; }
-  .collectionMain .boxIconsEvents .btnClear {
-    cursor: pointer;
-    color: white;
-    border-width: .1px;
-    border-color: lightgray;
-    opacity: calc(.9); }
-    .collectionMain .boxIconsEvents .btnClear:hover {
-      background-color: #ff3c3c;
-      color: white; }
-  .collectionMain .boxIconsEvents .btnAdd {
-    cursor: pointer;
-    opacity: 0.8;
-    color: white;
-    border-width: .1px;
-    border-color: lightgray;
-    opacity: calc(.9); }
-    .collectionMain .boxIconsEvents .btnAdd:hover {
-      background-color: orange;
-      color: white; }
-
-.collectionMain .card {
-  border-radius: 10px 10px 0 0;
-  border-width: .1px;
-  border-color: lightgray;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
-  .collectionMain .card .card-top .card-img-top {
-    border-radius: 10px 10px 0 0; }
-  .collectionMain .card .card-top .btnAgregarCarrito {
-    color: #454545;
-    font-size: 12px;
-    padding: 2px 4px;
-    font-family: 'neueHaasLight';
-    border-radius: 0 0 0 10px;
-    border-width: .1px;
-    border-color: lightgray;
-    opacity: calc(.9); }
-    .collectionMain .card .card-top .btnAgregarCarrito:hover {
-      background-color: #3c813c;
-      color: white; }
-  .collectionMain .card .card-top .btnEliminar {
-    color: #454545;
-    font-size: 12px;
-    padding: 2px 4px;
-    font-family: 'neueHaasLight';
-    border-radius: 0 0 10px 0;
-    border-width: .1px;
-    border-color: lightgray;
-    opacity: calc(.9); }
-    .collectionMain .card .card-top .btnEliminar:hover {
-      background-color: #ff3c3c;
-      color: white; }
-  .collectionMain .card .card-body .cardTitle {
-    display: flex;
-    flex-direction: row; }
-    .collectionMain .card .card-body .cardTitle .cardName {
-      font-family: 'neueHaasMedium';
-      color: black; }
-  .collectionMain .card .card-body .cardArtist {
-    font-family: 'neueHaasRoman';
-    color: black;
-    line-height: 10px; }
-  .collectionMain .card .card-body .cardTxt {
-    list-style: none;
-    text-align: left;
+.collectionMain {
+  height: 100%; }
+  .collectionMain .contendorStyle {
+    font-family: 'neueHaasMedium';
+    color: #272727;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    line-height: 2px; }
-    .collectionMain .card .card-body .cardTxt .cardYear {
+    align-items: center;
+    margin-top: 100px; }
+  .collectionMain .boxIconsEvents {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    text-align: end; }
+    .collectionMain .boxIconsEvents .btnClear {
+      cursor: pointer;
+      color: white;
+      border-width: .1px;
+      border-color: lightgray;
+      opacity: calc(.9); }
+      .collectionMain .boxIconsEvents .btnClear:hover {
+        background-color: #ff3c3c;
+        color: white; }
+    .collectionMain .boxIconsEvents .btnAdd {
+      cursor: pointer;
+      opacity: 0.8;
+      color: white;
+      border-width: .1px;
+      border-color: lightgray;
+      opacity: calc(.9); }
+      .collectionMain .boxIconsEvents .btnAdd:hover {
+        background-color: orange;
+        color: white; }
+  .collectionMain .card {
+    border-radius: 10px 10px 0 0;
+    border-width: .1px;
+    border-color: lightgray;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
+    .collectionMain .card .card-top .card-img-top {
+      border-radius: 10px 10px 0 0;
+      height: 280px;
+      width: 100%; }
+    .collectionMain .card .card-top .btnEliminar {
+      color: #454545;
+      font-size: 12px;
+      padding: 2px 4px;
       font-family: 'neueHaasLight';
-      color: #272727;
-      font-size: .9rem; }
-    .collectionMain .card .card-body .cardTxt .cardGenre {
-      font-family: 'neueHaasLight';
-      color: #272727;
-      font-size: .9rem;
-      word-spacing: 2px; }
-    .collectionMain .card .card-body .cardTxt .cardKind {
-      font-family: 'neueHaasLight';
-      color: #272727;
-      font-size: .9rem; }
-  .collectionMain .card .card-body .cardTxtPrice {
-    list-style: none;
-    text-align: left;
-    flex-direction: column;
-    justify-content: start;
-    line-height: 2px; }
-    .collectionMain .card .card-body .cardTxtPrice .cardPrice {
+      border-radius: 0 0 10px 10px;
+      border-width: .1px;
+      border-color: lightgray;
+      opacity: calc(.9); }
+      .collectionMain .card .card-top .btnEliminar:hover {
+        background-color: #ff3c3c;
+        color: white; }
+    .collectionMain .card .card-body .cardTitle {
       display: flex;
-      justify-content: end;
-      font-family: 'neueHaasLightItalic';
-      color: #272727; }
+      flex-direction: row; }
+      .collectionMain .card .card-body .cardTitle .cardName {
+        font-family: 'neueHaasMedium';
+        color: black; }
+    .collectionMain .card .card-body .cardArtist {
+      font-family: 'neueHaasRoman';
+      color: black;
+      line-height: 10px; }
+    .collectionMain .card .card-body .cardTxt {
+      list-style: none;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      line-height: 2px; }
+      .collectionMain .card .card-body .cardTxt .cardYear {
+        font-family: 'neueHaasLight';
+        color: #272727;
+        font-size: .9rem; }
+      .collectionMain .card .card-body .cardTxt .cardGenre {
+        font-family: 'neueHaasLight';
+        color: #272727;
+        font-size: .9rem;
+        word-spacing: 2px; }
+      .collectionMain .card .card-body .cardTxt .cardKind {
+        font-family: 'neueHaasLight';
+        color: #272727;
+        font-size: .9rem; }
+    .collectionMain .card .card-body .cardTxtPrice {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .collectionMain .card .card-body .cardTxtPrice .cardId {
+        font-family: 'neueHaasLight';
+        color: #272727;
+        font-size: .9rem; }
+      .collectionMain .card .card-body .cardTxtPrice .cardPrice {
+        font-family: 'neueHaasLightItalic';
+        color: #272727;
+        font-size: .9rem; }
 
-.userMain .boxTitle {
-  font-family: 'neueHaasMedium';
-  color: #272727;
+.shopMain {
+  height: 100vh; }
+
+.userMain {
+  height: 87vh;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  margin-top: 150px; }
+  justify-content: center;
+  align-items: center; }
+  .userMain .boxTitle {
+    font-family: 'neueHaasMedium';
+    color: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px; }
+  .userMain .boxUsername {
+    font-family: 'neueHaasMedium';
+    color: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0; }
+  .userMain .labelUsername {
+    font-family: 'neueHaasRoman';
+    color: #272727; }
+  .userMain .containerDateStyle {
+    font-family: 'neueHaasLight';
+    color: #8d8d8d;
+    justify-content: start;
+    align-items: center;
+    font-size: .8rem; }
+  .userMain .textPlain1 {
+    font-family: 'neueHaasRoman';
+    color: #272727;
+    font-size: 1.2rem; }
+  .userMain .textPlain2 {
+    font-family: 'neueHaasRoman';
+    color: #272727;
+    font-size: 1.2rem; }
+  .userMain .btnLogin {
+    font-family: 'neueHaasRoman';
+    color: white;
+    font-size: 1rem;
+    padding: .5rem; }
+  .userMain .form-control::placeholder {
+    font-family: 'neueHaasRoman'; }
+  .userMain .form-control:required {
+    font-family: 'neueHaasRoman'; }
 
 /*========== NEUEHASS ==========*/
 @font-face {
@@ -370,3 +464,8 @@ body {
 :root {
   font-size: 16px;
   font-family: 'neueHaasRoman'; }
+
+.swal2-popup {
+  font-size: .8rem !important;
+  font-family: 'neueHaasRoman';
+  padding: 20px; }

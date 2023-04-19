@@ -1,13 +1,70 @@
 .userMain {
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .boxTitle {
         font-family: 'neueHaasMedium';
         color: rgb(39, 39, 39);
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
-        margin-top: 150px;
+        margin-top: 160px;
         // height: 100vh;
     }
+
+    .boxUsername {
+        font-family: 'neueHaasMedium';
+        color: rgb(39, 39, 39);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 0;
+        // height: 100vh;
+    }
+
+    .labelUsername{
+        font-family: 'neueHaasRoman';
+        color: rgb(39, 39, 39);
+    }
+
+    .containerDateStyle {
+        font-family: 'neueHaasLight';
+        color: rgb(141, 141, 141);
+        justify-content: start;
+        align-items: center;
+        font-size: .8rem;
+    }
+
+    .textPlain1{
+        font-family: 'neueHaasRoman';
+        color: rgb(39, 39, 39);
+        font-size: 1.2rem;
+    }
+
+    .textPlain2{
+        font-family: 'neueHaasRoman';
+        color: rgb(39, 39, 39);
+        font-size: 1.2rem;
+    }
+
+    .btnLogin{
+        font-family: 'neueHaasRoman';
+        color: white;
+        font-size: 1rem;
+        padding: .5rem;  
+    }
+
+    .form-control::placeholder {
+        font-family: 'neueHaasRoman';
+    }
+
+    .form-control:required {
+        font-family: 'neueHaasRoman';
+    }
 }
+

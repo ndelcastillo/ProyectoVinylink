@@ -9,7 +9,7 @@
 
 .indexMain {
 
-    .featuredTitles{
+    .featuredTitles {
         font-family: 'neueHaasMedium';
         color: rgb(39, 39, 39);
         display: flex;
@@ -28,7 +28,7 @@
 
         .card-top {
             .card-img-top {
-                border-radius: 10px 10px 0 0;
+                border-radius: 10px 10px 0px 0px;
             }
 
             .btnAgregarCarrito {
@@ -36,7 +36,7 @@
                 font-size: 12px;
                 padding: 2px 4px;
                 font-family: 'neueHaasLight';
-                border-radius: 0 0 0 10px;
+                border-radius: 0 0 10px 10px;
                 border-width: .1px;
                 border-color: lightgray;
                 opacity: calc(.9);
@@ -138,6 +138,6 @@
 
             }
         }
-
     }
 }
+

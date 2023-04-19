@@ -3,7 +3,8 @@ btnToggle.addEventListener('click', function () {
     document.getElementById('sidebar').classList.toggle('active')
 })
 
-const btnAddVinyl = document.getElementById('btnAddVinylSidebar')
+const btnAddVinyl = document.getElementById('btnOpenSidebar')
 btnAddVinyl.addEventListener('click', function () {
     document.getElementById('sidebar').classList.toggle('active')
 })
+

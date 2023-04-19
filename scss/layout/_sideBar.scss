@@ -11,7 +11,6 @@
         .toggleBtn {
             position: absolute;
             left: 430px;
-            top: 40px;
             height: 100%;
             width: 17px;
             background-color: orange;
@@ -62,7 +61,7 @@
         font-family: 'neueHaasLight';
     }
 
-    .form-control::required {
+    .form-control:required {
         font-family: 'neueHaasLight';
     }
 }

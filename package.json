@@ -16,6 +16,9 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.0-alpha3",
-    "boxicons": "^2.1.4"
+    "boxicons": "^2.1.4",
+    "luxon": "^3.3.0",
+    "sweetalert2": "^11.7.3",
+    "toastify-js": "^1.12.0"
   }
 }
