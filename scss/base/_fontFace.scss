@@ -1,41 +1,112 @@
 /*========== NEUEHASS ==========*/
+// @font-face {
+//     font-family: 'neueHaasBlack';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayBlack.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'neueHaasBold';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayBold.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'neueHaasMedium';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayMedium.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'neueHaasRoman';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayRoman.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'neueHaasRomanItalic';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayRomanItalic.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'neueHaasLight';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayLight.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'neueHaasLightItalic';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayLightItalic.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'neueHaasThin';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayThin.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'neueHaasXThin';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayXThin.ttf) format('truetype');
+// }
+// @font-face {
+//     font-family: 'neueHaasXXThin';
+//     src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayXXThin.ttf) format('truetype');
+// }
+
+/*========== NUNITO ==========*/
 @font-face {
-    font-family: 'neueHaasBlack';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayBlack.ttf) format('truetype');
+    font-family: 'ExtraLight200';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 }
+
 @font-face {
-    font-family: 'neueHaasBold';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayBold.ttf) format('truetype');
+    font-family: 'ExtraLight200Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
 }
+
 @font-face {
-    font-family: 'neueHaasMedium';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayMedium.ttf) format('truetype');
+    font-family: 'Light300';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 }
+
 @font-face {
-    font-family: 'neueHaasRoman';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayRoman.ttf) format('truetype');
+    font-family: 'Light300Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
 }
+
 @font-face {
-    font-family: 'neueHaasRomanItalic';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayRomanItalic.ttf) format('truetype');
+    font-family: 'Regular400';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 }
+
 @font-face {
-    font-family: 'neueHaasLight';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayLight.ttf) format('truetype');
+    font-family: 'Regular400Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap');
 }
+
 @font-face {
-    font-family: 'neueHaasLightItalic';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayLightItalic.ttf) format('truetype');
+    font-family: 'SemiBold600';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
 }
+
 @font-face {
-    font-family: 'neueHaasThin';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayThin.ttf) format('truetype');
+    font-family: 'SemiBold600Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,600&display=swap');
 }
+
 @font-face {
-    font-family: 'neueHaasXThin';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayXThin.ttf) format('truetype');
+    font-family: 'Bold700';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
 }
+
 @font-face {
-    font-family: 'neueHaasXXThin';
-    src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayXXThin.ttf) format('truetype');
+    font-family: 'Bold700Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,700&display=swap');
+}
+
+@font-face {
+    font-family: 'ExtraBold800';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
+}
+
+@font-face {
+    font-family: 'ExtraBold800Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,800&display=swap');
+}
+
+@font-face {
+    font-family: 'Black900';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap');
+}
+
+@font-face {
+    font-family: 'Black900Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap');
 }

@@ -28,3 +28,13 @@ const usuarioCompleto = {
     ...informacionUsuario
 }
 console.log(usuarioCompleto)
+
+
+function sumar(...numeros) {
+    // console.log(numeros);
+    const sumatoria = numeros.reduce(
+        (acumulador, valor) => acumulador + valor, 0
+    )
+    return sumatoria
+}
+console.log(sumar(2, 8, 3, 7, 9))

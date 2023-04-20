@@ -9,6 +9,7 @@ footer {
     align-items: start;
     justify-content: center; }
     footer .row1 .col1 ul {
+      font-family: 'Nunito Sans', sans-serif;
       list-style: none; }
       footer .row1 .col1 ul li {
         margin-top: 10px; }
@@ -24,6 +25,7 @@ footer {
     align-items: start;
     justify-content: center; }
     footer .row1 .col2 ul {
+      font-family: 'Nunito Sans', sans-serif;
       list-style: none; }
       footer .row1 .col2 ul li {
         margin-top: 5px;
@@ -48,6 +50,7 @@ footer {
     align-items: start;
     justify-content: center; }
     footer .row1 .col3 ul {
+      font-family: 'Nunito Sans', sans-serif;
       list-style: none; }
       footer .row1 .col3 ul li {
         margin-top: 10px; }
@@ -58,6 +61,14 @@ footer {
           color: #a0a0a0; }
           footer .row1 .col3 ul li a:hover {
             color: #272727; }
+
+header nav .navbar-brand {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600; }
+
+header nav .nav-item {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400; }
 
 .collectionSectionSidebar #sidebar {
   z-index: 1;
@@ -94,18 +105,23 @@ footer {
     list-style: none;
     margin-top: 110px; }
     .collectionSectionSidebar #sidebar .sidebarForm .boxTitle h1 {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
       font-size: 1.5rem; }
     .collectionSectionSidebar #sidebar .sidebarForm button {
-      font-family: 'neueHaasRoman'; }
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400; }
 
 .collectionSectionSidebar #sidebar.active {
   left: 0px; }
 
 .collectionSectionSidebar .form-control::placeholder {
-  font-family: 'neueHaasLight'; }
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400; }
 
 .collectionSectionSidebar .form-control:required {
-  font-family: 'neueHaasLight'; }
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400; }
 
 .inputFile {
   background-color: #eee;
@@ -116,13 +132,15 @@ footer {
   /* add padding to the input */
   font-size: 15px;
   /* change the font size */
-  font-family: 'neueHaasLight'; }
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400; }
 
 .custom-file-input {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  font-family: 'neueHaasLight'; }
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400; }
 
 .custom-file-input input[type="file"] {
   position: absolute;
@@ -130,7 +148,8 @@ footer {
   left: 0;
   opacity: 0;
   cursor: pointer;
-  font-family: 'neueHaasLight'; }
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400; }
 
 .custom-file-input label {
   display: flex;
@@ -143,7 +162,8 @@ footer {
   border-radius: 4px;
   border: 0.1px solid lightgrey;
   cursor: pointer;
-  font-family: 'neueHaasLight'; }
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400; }
   .custom-file-input label span {
     position: relative;
     right: 8px; }
@@ -167,8 +187,10 @@ footer {
     width: 100vw;
     height: 65vh; }
 
-.indexMain .featuredTitles {
-  font-family: 'neueHaasMedium';
+.indexMain .sectionClassicHits .txtTitle {
+  font-size: 2.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
   color: #272727;
   display: flex;
   flex-direction: column;
@@ -176,83 +198,208 @@ footer {
   align-items: center;
   margin-top: 100px; }
 
-.indexMain .card {
+.indexMain .sectionClassicHits .txtSubTitle {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  color: orange; }
+
+.indexMain .sectionClassicHits .card {
   border-radius: 10px 10px 0 0;
   border-width: .1px;
   border-color: lightgray;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
-  .indexMain .card .card-top .card-img-top {
+  .indexMain .sectionClassicHits .card .card-top .card-img-top {
     border-radius: 10px 10px 0px 0px; }
-  .indexMain .card .card-top .btnAgregarCarrito {
+  .indexMain .sectionClassicHits .card .card-top .btnAgregarCarrito {
     color: #454545;
     font-size: 12px;
     padding: 2px 4px;
-    font-family: 'neueHaasLight';
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
     border-radius: 0 0 10px 10px;
     border-width: .1px;
     border-color: lightgray;
     opacity: calc(.9); }
-    .indexMain .card .card-top .btnAgregarCarrito:hover {
+    .indexMain .sectionClassicHits .card .card-top .btnAgregarCarrito:hover {
       background-color: #3c813c;
       color: white; }
-  .indexMain .card .card-top .btnEliminar {
-    color: #454545;
-    font-size: 12px;
-    padding: 2px 4px;
-    font-family: 'neueHaasLight';
-    border-radius: 0 0 10px 0;
-    border-width: .1px;
-    border-color: lightgray;
-    opacity: calc(.9); }
-    .indexMain .card .card-top .btnEliminar:hover {
-      background-color: #ff3c3c;
-      color: white; }
-  .indexMain .card .card-body .cardTitle {
+  .indexMain .sectionClassicHits .card .card-body .cardTitle {
     display: flex;
     flex-direction: row; }
-    .indexMain .card .card-body .cardTitle .cardName {
-      font-family: 'neueHaasMedium';
+    .indexMain .sectionClassicHits .card .card-body .cardTitle .cardName {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
       color: black; }
-  .indexMain .card .card-body .cardArtist {
-    font-family: 'neueHaasRoman';
+  .indexMain .sectionClassicHits .card .card-body .cardArtist {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
     color: black;
     line-height: 10px; }
-  .indexMain .card .card-body .cardTxt {
+  .indexMain .sectionClassicHits .card .card-body .cardTxt {
     list-style: none;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: start;
     line-height: 2px; }
-    .indexMain .card .card-body .cardTxt .cardYear {
-      font-family: 'neueHaasLight';
+    .indexMain .sectionClassicHits .card .card-body .cardTxt .cardYear {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
       color: #272727;
       font-size: .9rem; }
-    .indexMain .card .card-body .cardTxt .cardGenre {
-      font-family: 'neueHaasLight';
+    .indexMain .sectionClassicHits .card .card-body .cardTxt .cardGenre {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
       color: #272727;
       font-size: .9rem;
       word-spacing: 2px; }
-    .indexMain .card .card-body .cardTxt .cardKind {
-      font-family: 'neueHaasLight';
+    .indexMain .sectionClassicHits .card .card-body .cardTxt .cardKind {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
       color: #272727;
       font-size: .9rem; }
-  .indexMain .card .card-body .cardTxtPrice {
+  .indexMain .sectionClassicHits .card .card-body .cardTxtPrice {
     list-style: none;
     text-align: left;
     flex-direction: column;
     justify-content: start;
     line-height: 2px; }
-    .indexMain .card .card-body .cardTxtPrice .cardPrice {
+    .indexMain .sectionClassicHits .card .card-body .cardTxtPrice .cardPrice {
       display: flex;
       justify-content: end;
-      font-family: 'neueHaasLightItalic';
-      color: #272727; }
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #272727;
+      font-size: .9rem; }
+    .indexMain .sectionClassicHits .card .card-body .cardTxtPrice .cardPriceOferta {
+      display: flex;
+      justify-content: end;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #272727;
+      font-size: .6rem; }
+    .indexMain .sectionClassicHits .card .card-body .cardTxtPrice .cardOferta {
+      display: flex;
+      justify-content: end;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      color: #3c813c;
+      font-size: 1rem; }
+
+.indexMain .sectionNewArrivals .txtTitle {
+  font-size: 2.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  color: #272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 100px; }
+
+.indexMain .sectionNewArrivals .txtSubTitle {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  color: orange; }
+
+.indexMain .sectionNewArrivals .card {
+  border-radius: 10px 10px 0 0;
+  border-width: .1px;
+  border-color: lightgray;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
+  .indexMain .sectionNewArrivals .card .card-top .card-img-top {
+    border-radius: 10px 10px 0px 0px; }
+  .indexMain .sectionNewArrivals .card .card-top .btnAgregarCarrito {
+    color: #454545;
+    font-size: 12px;
+    padding: 2px 4px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    border-radius: 0 0 10px 10px;
+    border-width: .1px;
+    border-color: lightgray;
+    opacity: calc(.9); }
+    .indexMain .sectionNewArrivals .card .card-top .btnAgregarCarrito:hover {
+      background-color: #3c813c;
+      color: white; }
+  .indexMain .sectionNewArrivals .card .card-body .cardTitle {
+    display: flex;
+    flex-direction: row; }
+    .indexMain .sectionNewArrivals .card .card-body .cardTitle .cardName {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
+      color: black; }
+  .indexMain .sectionNewArrivals .card .card-body .cardArtist {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: black;
+    line-height: 10px; }
+  .indexMain .sectionNewArrivals .card .card-body .cardTxt {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    line-height: 2px; }
+    .indexMain .sectionNewArrivals .card .card-body .cardTxt .cardYear {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      color: #272727;
+      font-size: .9rem; }
+    .indexMain .sectionNewArrivals .card .card-body .cardTxt .cardGenre {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      color: #272727;
+      font-size: .9rem;
+      word-spacing: 2px; }
+    .indexMain .sectionNewArrivals .card .card-body .cardTxt .cardKind {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      color: #272727;
+      font-size: .9rem; }
+  .indexMain .sectionNewArrivals .card .card-body .cardTxtPrice {
+    list-style: none;
+    text-align: left;
+    flex-direction: column;
+    justify-content: start;
+    line-height: 2px; }
+    .indexMain .sectionNewArrivals .card .card-body .cardTxtPrice .cardPrice {
+      display: flex;
+      justify-content: end;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #272727;
+      font-size: .9rem; }
+    .indexMain .sectionNewArrivals .card .card-body .cardTxtPrice .cardPriceOferta {
+      display: flex;
+      justify-content: end;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #272727;
+      font-size: .6rem; }
+    .indexMain .sectionNewArrivals .card .card-body .cardTxtPrice .cardOferta {
+      display: flex;
+      justify-content: end;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #3c813c;
+      font-size: .9rem; }
 
 .collectionMain {
   height: 100%; }
-  .collectionMain .contendorStyle {
-    font-family: 'neueHaasMedium';
+  .collectionMain .contendorTitleStyle {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
     color: #272727;
     display: flex;
     flex-direction: column;
@@ -298,7 +445,8 @@ footer {
       color: #454545;
       font-size: 12px;
       padding: 2px 4px;
-      font-family: 'neueHaasLight';
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
       border-radius: 0 0 10px 10px;
       border-width: .1px;
       border-color: lightgray;
@@ -310,10 +458,12 @@ footer {
       display: flex;
       flex-direction: row; }
       .collectionMain .card .card-body .cardTitle .cardName {
-        font-family: 'neueHaasMedium';
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 700;
         color: black; }
     .collectionMain .card .card-body .cardArtist {
-      font-family: 'neueHaasRoman';
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 600;
       color: black;
       line-height: 10px; }
     .collectionMain .card .card-body .cardTxt {
@@ -324,16 +474,19 @@ footer {
       justify-content: start;
       line-height: 2px; }
       .collectionMain .card .card-body .cardTxt .cardYear {
-        font-family: 'neueHaasLight';
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
         color: #272727;
         font-size: .9rem; }
       .collectionMain .card .card-body .cardTxt .cardGenre {
-        font-family: 'neueHaasLight';
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
         color: #272727;
         font-size: .9rem;
         word-spacing: 2px; }
       .collectionMain .card .card-body .cardTxt .cardKind {
-        font-family: 'neueHaasLight';
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
         color: #272727;
         font-size: .9rem; }
     .collectionMain .card .card-body .cardTxtPrice {
@@ -341,16 +494,123 @@ footer {
       flex-direction: row;
       justify-content: space-between; }
       .collectionMain .card .card-body .cardTxtPrice .cardId {
-        font-family: 'neueHaasLight';
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
         color: #272727;
         font-size: .9rem; }
       .collectionMain .card .card-body .cardTxtPrice .cardPrice {
-        font-family: 'neueHaasLightItalic';
-        color: #272727;
-        font-size: .9rem; }
+        display: flex;
+        justify-content: end;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: #272727; }
 
 .shopMain {
   height: 100vh; }
+  .shopMain .sectionShop .txtTitle {
+    font-size: 3rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    color: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 150px; }
+  .shopMain .sectionShop .card {
+    border-radius: 10px 10px 0 0;
+    border-width: .1px;
+    border-color: lightgray;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
+    .shopMain .sectionShop .card .card-top .card-img-top {
+      border-radius: 10px 10px 0px 0px; }
+    .shopMain .sectionShop .card .card-top .btnAgregarCarrito {
+      color: #454545;
+      font-size: 12px;
+      padding: 2px 4px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      border-radius: 0 0 10px 10px;
+      border-width: .1px;
+      border-color: lightgray;
+      opacity: calc(.9); }
+      .shopMain .sectionShop .card .card-top .btnAgregarCarrito:hover {
+        background-color: #3c813c;
+        color: white; }
+    .shopMain .sectionShop .card .card-body .cardTitle {
+      display: flex;
+      flex-direction: row; }
+      .shopMain .sectionShop .card .card-body .cardTitle .cardName {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 700;
+        color: black; }
+    .shopMain .sectionShop .card .card-body .cardArtist {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 500;
+      color: black;
+      line-height: 10px; }
+    .shopMain .sectionShop .card .card-body .cardTxt {
+      list-style: none;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      line-height: 2px; }
+      .shopMain .sectionShop .card .card-body .cardTxt .cardYear {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        color: #272727;
+        font-size: .9rem; }
+      .shopMain .sectionShop .card .card-body .cardTxt .cardGenre {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        color: #272727;
+        font-size: .9rem;
+        word-spacing: 2px; }
+      .shopMain .sectionShop .card .card-body .cardTxt .cardKind {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        color: #272727;
+        font-size: .9rem; }
+    .shopMain .sectionShop .card .card-body .cardTxtPrice {
+      list-style: none;
+      text-align: left;
+      flex-direction: column;
+      justify-content: start;
+      line-height: 2px; }
+      .shopMain .sectionShop .card .card-body .cardTxtPrice .cardPrice {
+        display: flex;
+        justify-content: end;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: #272727;
+        font-size: .9rem; }
+      .shopMain .sectionShop .card .card-body .cardTxtPrice .cardPriceOferta {
+        display: flex;
+        justify-content: end;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: #272727;
+        font-size: .6rem; }
+      .shopMain .sectionShop .card .card-body .cardTxtPrice .cardOferta {
+        display: flex;
+        justify-content: end;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: #3c813c;
+        font-size: .9rem; }
+  .shopMain #messageBox {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .shopMain #messageBox.show {
+    display: block; }
 
 .userMain {
   height: 87vh;
@@ -359,7 +619,8 @@ footer {
   justify-content: center;
   align-items: center; }
   .userMain .boxTitle {
-    font-family: 'neueHaasMedium';
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
     color: #272727;
     display: flex;
     flex-direction: column;
@@ -375,72 +636,96 @@ footer {
     align-items: center;
     margin-top: 0; }
   .userMain .labelUsername {
-    font-family: 'neueHaasRoman';
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
     color: #272727; }
   .userMain .containerDateStyle {
-    font-family: 'neueHaasLight';
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
     color: #8d8d8d;
     justify-content: start;
     align-items: center;
     font-size: .8rem; }
   .userMain .textPlain1 {
-    font-family: 'neueHaasRoman';
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
     color: #272727;
     font-size: 1.2rem; }
   .userMain .textPlain2 {
-    font-family: 'neueHaasRoman';
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
     color: #272727;
     font-size: 1.2rem; }
   .userMain .btnLogin {
-    font-family: 'neueHaasRoman';
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
     color: white;
     font-size: 1rem;
     padding: .5rem; }
   .userMain .form-control::placeholder {
-    font-family: 'neueHaasRoman'; }
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400; }
   .userMain .form-control:required {
-    font-family: 'neueHaasRoman'; }
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400; }
 
 /*========== NEUEHASS ==========*/
+/*========== NUNITO ==========*/
 @font-face {
-  font-family: 'neueHaasBlack';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayBlack.ttf) format("truetype"); }
+  font-family: 'ExtraLight200';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap"); }
 
 @font-face {
-  font-family: 'neueHaasBold';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayBold.ttf) format("truetype"); }
+  font-family: 'ExtraLight200Italic';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap"); }
 
 @font-face {
-  font-family: 'neueHaasMedium';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayMedium.ttf) format("truetype"); }
+  font-family: 'Light300';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"); }
 
 @font-face {
-  font-family: 'neueHaasRoman';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayRoman.ttf) format("truetype"); }
+  font-family: 'Light300Italic';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap"); }
 
 @font-face {
-  font-family: 'neueHaasRomanItalic';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayRomanItalic.ttf) format("truetype"); }
+  font-family: 'Regular400';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"); }
 
 @font-face {
-  font-family: 'neueHaasLight';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayLight.ttf) format("truetype"); }
+  font-family: 'Regular400Italic';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap"); }
 
 @font-face {
-  font-family: 'neueHaasLightItalic';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayLightItalic.ttf) format("truetype"); }
+  font-family: 'SemiBold600';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap"); }
 
 @font-face {
-  font-family: 'neueHaasThin';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayThin.ttf) format("truetype"); }
+  font-family: 'SemiBold600Italic';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,600&display=swap"); }
 
 @font-face {
-  font-family: 'neueHaasXThin';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayXThin.ttf) format("truetype"); }
+  font-family: 'Bold700';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap"); }
 
 @font-face {
-  font-family: 'neueHaasXXThin';
-  src: url(../../assets/fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayXXThin.ttf) format("truetype"); }
+  font-family: 'Bold700Italic';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,700&display=swap"); }
+
+@font-face {
+  font-family: 'ExtraBold800';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap"); }
+
+@font-face {
+  font-family: 'ExtraBold800Italic';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,800&display=swap"); }
+
+@font-face {
+  font-family: 'Black900';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap"); }
+
+@font-face {
+  font-family: 'Black900Italic';
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap"); }
 
 * {
   margin: 0;
@@ -463,9 +748,9 @@ body {
 
 :root {
   font-size: 16px;
-  font-family: 'neueHaasRoman'; }
+  font-family: 'Nunito Sans', sans-serif; }
 
 .swal2-popup {
   font-size: .8rem !important;
-  font-family: 'neueHaasRoman';
+  font-family: 'Nunito Sans', sans-serif;
   padding: 20px; }

@@ -141,3 +141,88 @@
 // // alert(`Naciste hace ${Math.ceil(diferenciaAnios)} años`)
 
 
+//===================== OPERADOR REST
+// function sumar(...numeros) {
+//     // console.log(numeros);
+//     const sumatoria = numeros.reduce(
+//         (acumulador, valor) => acumulador + valor, 0
+//     )
+//     return sumatoria
+// }
+// console.log(sumar(2, 8, 3, 7, 9))
+
+
+//===================== SET INTERVAL
+// let counter = 0
+// const interval = setInterval(() => {
+//     counter++
+//     console.log("Counter: ", counter)
+
+//     if (counter >= 20) {
+//         clearInterval(interval)
+//         console.log("Se removio el interval")
+//     }
+// })
+
+//===================== PROMESA
+// const eventoFuturo = (response) => {
+//     return new Promise((resolve, reject) => {
+//         if (response === true) {
+//             resolve('Pormesa resuelta')
+//         } else {
+//             reject('Promesa rechazada')
+//         }
+//     })
+// }
+// console.log(eventoFuturo(true))
+// console.log(eventoFuturo(false))
+
+// eventoFuturo(true)
+//     .then((response) => {
+//         console.log(response)
+//     })
+//     .catch((error) => {
+//         console.log(error)
+//     })
+//     .finally(() => {
+//         console.log("Fin del proceso")
+//     })
+
+// eventoFuturo(false)
+//     .then((response) => {
+//         console.log(response)
+//     })
+//     .catch((error) => {
+//         console.log(error)
+//     })
+//     .finally(() => {
+//         console.log("Fin del proceso")
+//     })
+
+
+// const promesa = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("resuelto")
+//     }, 2000)
+// })
+// console.log(promesa)
+
+
+// promesa.then((response) => {
+//     console.log(response)
+// })
+
+
+//===================== ARROW FUNCTION
+// function add(a, b) {
+//     return a + b;
+// }
+// console.log(add(22,4))
+
+// const plus = (a, b) => {
+//     return a + b;
+// }
+// console.log(plus(22,4))
+
+// const sumar = (a,b) => a + b;
+// console.log(sumar(22,4))

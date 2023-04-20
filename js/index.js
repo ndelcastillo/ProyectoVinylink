@@ -7,6 +7,7 @@ const listaProductos = [
         genero: "Rock",
         tipo: "LP",
         precio: 5000,
+        oferta: '',
         cantidad: 1,
         img: "assets/images/productos/the-dark-side-of-the-moon-pink-floyd.jpeg"
     },
@@ -18,6 +19,7 @@ const listaProductos = [
         genero: "Synth-pop",
         tipo: "LPx2",
         precio: 7000,
+        oferta: '',
         cantidad: 1,
         img: "assets/images/productos/memento-mori-depeche-mode.jpeg"
     },
@@ -29,6 +31,7 @@ const listaProductos = [
         genero: "R&B",
         tipo: "LPx2",
         precio: 8000,
+        oferta: '',
         cantidad: 1,
         img: "assets/images/productos/blonde-frank-ocean.jpeg"
     },
@@ -40,6 +43,7 @@ const listaProductos = [
         genero: "Electronic",
         tipo: "LP",
         precio: 5000,
+        oferta: '',
         cantidad: 1,
         img: "assets/images/productos/cracker-island-gorillaz.jpeg"
     },
@@ -51,6 +55,7 @@ const listaProductos = [
         genero: "Dance-pop",
         tipo: "LPx2",
         precio: 9000,
+        oferta: '',
         cantidad: 1,
         img: "assets/images/productos/lover-live-from-paris-taylor-swift.jpeg"
     },
@@ -62,6 +67,7 @@ const listaProductos = [
         genero: "Trip-Hop",
         tipo: "LPx2",
         precio: 7000,
+        oferta: '',
         cantidad: 1,
         img: "assets/images/productos/mezzanie-masive-attack.jpeg"
     },
@@ -73,6 +79,7 @@ const listaProductos = [
         genero: "R&B",
         tipo: "LPx2",
         precio: 9000,
+        oferta: '',
         cantidad: 1,
         img: "assets/images/productos/anti-rihanna.jpeg"
     },
@@ -84,15 +91,23 @@ const listaProductos = [
         genero: "Rock",
         tipo: "LPx2",
         precio: 8000,
+        oferta: '',
         cantidad: 1,
         img: "assets/images/productos/siamese-dream-smashing-pumpkins.jpeg"
     },
 ]
 
+//Le agrego a ciertos productos un 15% OFF
+const productosPrecioDescuento = listaProductos.map((producto) => ({
+    ...producto,
+    oferta: producto.precio * 0.85,
+}))
+console.log(productosPrecioDescuento)
+
 const contenedorProductos = document.getElementById("contenedor-productos")
-for (const productos of listaProductos) {
+for (const productos of productosPrecioDescuento) {
     let column = document.createElement("div")
-    column.className = "col-lg-3 mt-5 pt-3 d-flex justify-content-center align-items-center";
+    column.className = "col-lg-3 col-12 mt-5 pt-3 d-flex justify-content-center align-items-center";
     column.id = `columna-${productos.id}`;
     column.innerHTML = `
         <div class = "card position-relative" style="width:17rem">
@@ -101,7 +116,7 @@ for (const productos of listaProductos) {
                 <button type="button" id=boton${productos.id} class="btn btnAgregarCarrito shadow-sm btn-outline-secondary position-absolute top-100 end-0 start-0">Add to cart</button>
            </div>
             <div class="card-body">
-                <div class="cardTitle">
+                    <div class="cardTitle">
                     <h5 class="cardName"> ${productos.nombre} </h5>
                 </div>
                 <h6 class="cardArtist"> ${productos.artista} </h6>
@@ -112,6 +127,7 @@ for (const productos of listaProductos) {
                 </div>
                 <div class="cardTxtPrice">
                     <p class="cardPrice"> $ ${productos.precio} </p>
+                    <p class="cardPriceOferta">(15% OFF) <span class="cardOferta ms-1"> $${productos.oferta} </span> </p>
                 </div>
             </div>
         </div>`;
@@ -120,7 +136,7 @@ for (const productos of listaProductos) {
 
     const boton = document.getElementById(`boton${productos.id}`)
     boton.addEventListener('click', () => {
-          Toastify({
+        Toastify({
             text: `"${productos.nombre}" added to cart`,
             duration: 3000,
             close: true,
@@ -131,7 +147,6 @@ for (const productos of listaProductos) {
                 color: "white",
                 background: "rgb(60, 129, 60)",
             },
-            onClick: function () { } // Callback after click
         }).showToast();
     })
     // // ========== BORRAR UNA CARD
@@ -155,5 +170,25 @@ for (const productos of listaProductos) {
 
     let productosArray = JSON.parse(productosAlmacenados);
     console.log(typeof productosArray, productosArray)
-
 }
+
+
+//========== PROMISE MAILING
+let tiempo = 7000;
+setTimeout(() => {
+    Swal.fire({
+        title: 'Vinyl Subscription',
+        text: '¡Get regular deliveries of vinyls at a discounted rate!',
+        input: 'email',
+        inputPlaceholder: 'Introduce your email',
+        showDenyButton: true,
+        denyButtonText: 'Cancel',
+        showConfirmButton: true,
+        confirmButtonText: 'Sign up',
+        // backdrop: "#d3d3d399"
+    })
+    if (email) {
+        Swal.fire(`Entered email: ${email}`)
+    }
+}, tiempo)
+
