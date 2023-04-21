@@ -140,9 +140,9 @@ for (const productos of productosPrecioDescuento) {
             text: `"${productos.nombre}" added to cart`,
             duration: 3000,
             close: true,
-            gravity: "bottom", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            gravity: "bottom",
+            position: "right", 
+            stopOnFocus: true, 
             style: {
                 color: "white",
                 background: "rgb(60, 129, 60)",

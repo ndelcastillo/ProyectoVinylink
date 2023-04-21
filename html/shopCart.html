@@ -56,7 +56,8 @@
                     </form>
                     <ul class="navbar-nav mb-lg-0 ms-3">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./shopCart.html"><i class='bx bx-shopping-bag'></i></a>
+                            <a class="nav-link" aria-current="page" href="./shopCart.html"><i
+                                    class='bx bx-shopping-bag'></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./user.html"><i class='bx bx-user'></i></a>
@@ -66,63 +67,47 @@
             </div>
         </nav>
     </header>
-    <main class="userMain">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 offset-lg-0 d-flex justify-content-center">
-                    <div class="boxTitle">
-                        <h1 class="">Login</h1>
+    <main class="shopMain">
+        <section class="sectionShop">
+            <div class="container mt-3 mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div>
+                            <h1 class="txtTitle">Cart</h1>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-12 offset-lg-0 d-flex justify-content-center mb-4">
-                    <div class="textPlain1">
-                        <div id="emailHelp" class="form-text">Please enter your username and password:</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 offset-lg-0 d-flex justify-content-center">
-                    <div id="contenedorUsuario" hidden>
-                        <h1 id="textoUsuario" class="boxUsername">Bienvenido: </h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div id="contenedorIdentificacion">
-                        <form id="formularioIdentificacion">
-                            <div class="row mb-4">
-                                <div class="col-lg-12">
-                                    <div class="d-flex mb-4">
-                                        <input type="text" class="form-control" id="inputUsuario" placeholder="Username"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="d-flex">
-                                        <input type="password" class="form-control" id="inputPassword"
-                                            placeholder="Password" required>
-                                    </div>
-                                </div>
-                                <div class="mb-4 mt-4 d-grid gap-3">
-                                    <button type="submit" class="btn btn-dark btn-md btnLogin">LOGIN</button>
-                                </div>
-                                <div class="d-flex justify-content-center textPlain2">
-                                    <div id="emailHelp" class="form-text">Don't have an account? <a href="">Create
-                                            one</a></div>
-                                </div>
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0">
+                        <!-- Contenedor del carrito de compras -->
+                        <div id="carrito">
+                            <!-- Encabezado del carrito de compras -->
+                            <div class="carrito-encabezado">
+                                <h2>Carrito de compras</h2>
                             </div>
-                        </form>
+
+                            <!-- Lista de productos en el carrito -->
+                            <div class="carrito-productos">
+                                <!-- Cada producto en el carrito se agrega aquí dinámicamente -->
+                            </div>
+
+                            <!-- Resumen de la compra -->
+                            <div class="carrito-resumen">
+                                <h4>Resumen de la compra</h4>
+                                <p>Total: <span id="carrito-total">$0</span></p>
+                                <button id="carrito-comprar">Comprar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <button type="button" id="showMessageBtn" class="btn btn-lg btn-dark shadow-sm">SHOP</button>
+                        <button type="button" id="messageBox" class="btn btn-warning btn-lg shadow-sm">COMING SOON</button>
+                    </div>
+                </div> -->
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-                <div id="containerDate"></div>
-            </div>
-        </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="container-fluid">
@@ -166,14 +151,14 @@
             </div>
         </div>
     </footer>
+
     <!-- TOASTIFY-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!-- SWEETALERT2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/user.js"></script>
     <!-- JS -->
-    <!-- <script src="../js/formProduct.js"></script>
-    <script src="../js/sideBar.js"></script> -->
+    <script src="../js/cartShop.js"></script>>
+    <script src="../js/shop.js"></script>
 </body>
 
 </html>

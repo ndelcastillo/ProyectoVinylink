@@ -208,90 +208,96 @@ header nav .nav-item {
 .indexMain .sectionClassicHits .card {
   border-radius: 10px 10px 0 0;
   border-width: .1px;
+  border-color: lightgray; }
+
+.indexMain .sectionClassicHits .card-top .card-img-top {
+  border-radius: 10px 10px 0px 0px; }
+
+.indexMain .sectionClassicHits .card-top .btnAgregarCarrito {
+  color: #454545;
+  font-size: 12px;
+  padding: 2px 4px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  border-radius: 0 0 10px 10px;
+  border-width: .1px;
   border-color: lightgray;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
-  .indexMain .sectionClassicHits .card .card-top .card-img-top {
-    border-radius: 10px 10px 0px 0px; }
-  .indexMain .sectionClassicHits .card .card-top .btnAgregarCarrito {
-    color: #454545;
-    font-size: 12px;
-    padding: 2px 4px;
+  opacity: calc(.9); }
+  .indexMain .sectionClassicHits .card-top .btnAgregarCarrito:hover {
+    background-color: #3c813c;
+    color: white; }
+
+.indexMain .sectionClassicHits .card-body .cardTitle {
+  display: flex;
+  flex-direction: row; }
+  .indexMain .sectionClassicHits .card-body .cardTitle .cardName {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    color: black; }
+
+.indexMain .sectionClassicHits .card-body .cardArtist {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  color: black;
+  line-height: 10px; }
+
+.indexMain .sectionClassicHits .card-body .cardTxt {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  line-height: 2px; }
+  .indexMain .sectionClassicHits .card-body .cardTxt .cardYear {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
-    border-radius: 0 0 10px 10px;
-    border-width: .1px;
-    border-color: lightgray;
-    opacity: calc(.9); }
-    .indexMain .sectionClassicHits .card .card-top .btnAgregarCarrito:hover {
-      background-color: #3c813c;
-      color: white; }
-  .indexMain .sectionClassicHits .card .card-body .cardTitle {
-    display: flex;
-    flex-direction: row; }
-    .indexMain .sectionClassicHits .card .card-body .cardTitle .cardName {
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 700;
-      color: black; }
-  .indexMain .sectionClassicHits .card .card-body .cardArtist {
+    color: #272727;
+    font-size: .9rem; }
+  .indexMain .sectionClassicHits .card-body .cardTxt .cardGenre {
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 500;
-    color: black;
-    line-height: 10px; }
-  .indexMain .sectionClassicHits .card .card-body .cardTxt {
-    list-style: none;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    line-height: 2px; }
-    .indexMain .sectionClassicHits .card .card-body .cardTxt .cardYear {
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      color: #272727;
-      font-size: .9rem; }
-    .indexMain .sectionClassicHits .card .card-body .cardTxt .cardGenre {
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      color: #272727;
-      font-size: .9rem;
-      word-spacing: 2px; }
-    .indexMain .sectionClassicHits .card .card-body .cardTxt .cardKind {
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      color: #272727;
-      font-size: .9rem; }
-  .indexMain .sectionClassicHits .card .card-body .cardTxtPrice {
-    list-style: none;
-    text-align: left;
-    flex-direction: column;
-    justify-content: start;
-    line-height: 2px; }
-    .indexMain .sectionClassicHits .card .card-body .cardTxtPrice .cardPrice {
-      display: flex;
-      justify-content: end;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      font-style: italic;
-      color: #272727;
-      font-size: .9rem; }
-    .indexMain .sectionClassicHits .card .card-body .cardTxtPrice .cardPriceOferta {
-      display: flex;
-      justify-content: end;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      font-style: italic;
-      color: #272727;
-      font-size: .6rem; }
-    .indexMain .sectionClassicHits .card .card-body .cardTxtPrice .cardOferta {
-      display: flex;
-      justify-content: end;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 700;
-      font-style: italic;
-      color: #3c813c;
-      font-size: 1rem; }
+    font-weight: 400;
+    color: #272727;
+    font-size: .9rem;
+    word-spacing: 2px; }
+  .indexMain .sectionClassicHits .card-body .cardTxt .cardKind {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #272727;
+    font-size: .9rem; }
 
-.indexMain .sectionNewArrivals .txtTitle {
+.indexMain .sectionClassicHits .card-body .cardTxtPrice {
+  list-style: none;
+  text-align: left;
+  flex-direction: column;
+  justify-content: start;
+  line-height: 2px; }
+  .indexMain .sectionClassicHits .card-body .cardTxtPrice .cardPrice {
+    display: flex;
+    justify-content: end;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #272727;
+    font-size: .9rem;
+    text-decoration: line-through; }
+  .indexMain .sectionClassicHits .card-body .cardTxtPrice .cardPriceOferta {
+    display: flex;
+    justify-content: end;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #272727;
+    font-size: .6rem; }
+  .indexMain .sectionClassicHits .card-body .cardTxtPrice .cardOferta {
+    display: flex;
+    justify-content: end;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #3c813c;
+    font-size: 1rem; }
+
+.sectionNewArrivals .txtTitle {
   font-size: 2.5rem;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 800;
@@ -302,101 +308,107 @@ header nav .nav-item {
   align-items: center;
   margin-top: 100px; }
 
-.indexMain .sectionNewArrivals .txtSubTitle {
+.sectionNewArrivals .txtSubTitle {
   text-align: center;
   font-size: 1rem;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   color: orange; }
 
-.indexMain .sectionNewArrivals .card {
+.sectionNewArrivals .card {
   border-radius: 10px 10px 0 0;
   border-width: .1px;
+  border-color: lightgray; }
+
+.sectionNewArrivals .card-top .card-img-top {
+  border-radius: 10px 10px 0px 0px; }
+
+.sectionNewArrivals .card-top .btnAgregarCarrito {
+  color: #454545;
+  font-size: 12px;
+  padding: 2px 4px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  border-radius: 0 0 10px 10px;
+  border-width: .1px;
   border-color: lightgray;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
-  .indexMain .sectionNewArrivals .card .card-top .card-img-top {
-    border-radius: 10px 10px 0px 0px; }
-  .indexMain .sectionNewArrivals .card .card-top .btnAgregarCarrito {
-    color: #454545;
-    font-size: 12px;
-    padding: 2px 4px;
+  opacity: calc(.9); }
+  .sectionNewArrivals .card-top .btnAgregarCarrito:hover {
+    background-color: #3c813c;
+    color: white; }
+
+.sectionNewArrivals .card-body .cardTitle {
+  display: flex;
+  flex-direction: row; }
+  .sectionNewArrivals .card-body .cardTitle .cardName {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    color: black; }
+
+.sectionNewArrivals .card-body .cardArtist {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  color: black;
+  line-height: 10px; }
+
+.sectionNewArrivals .card-body .cardTxt {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  line-height: 2px; }
+  .sectionNewArrivals .card-body .cardTxt .cardYear {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
-    border-radius: 0 0 10px 10px;
-    border-width: .1px;
-    border-color: lightgray;
-    opacity: calc(.9); }
-    .indexMain .sectionNewArrivals .card .card-top .btnAgregarCarrito:hover {
-      background-color: #3c813c;
-      color: white; }
-  .indexMain .sectionNewArrivals .card .card-body .cardTitle {
-    display: flex;
-    flex-direction: row; }
-    .indexMain .sectionNewArrivals .card .card-body .cardTitle .cardName {
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 700;
-      color: black; }
-  .indexMain .sectionNewArrivals .card .card-body .cardArtist {
+    color: #272727;
+    font-size: .9rem; }
+  .sectionNewArrivals .card-body .cardTxt .cardGenre {
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 500;
-    color: black;
-    line-height: 10px; }
-  .indexMain .sectionNewArrivals .card .card-body .cardTxt {
-    list-style: none;
-    text-align: left;
+    font-weight: 400;
+    color: #272727;
+    font-size: .9rem;
+    word-spacing: 2px; }
+  .sectionNewArrivals .card-body .cardTxt .cardKind {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #272727;
+    font-size: .9rem; }
+
+.sectionNewArrivals .card-body .cardTxtPrice {
+  list-style: none;
+  text-align: left;
+  flex-direction: column;
+  justify-content: start;
+  line-height: 2px; }
+  .sectionNewArrivals .card-body .cardTxtPrice .cardPrice {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    line-height: 2px; }
-    .indexMain .sectionNewArrivals .card .card-body .cardTxt .cardYear {
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      color: #272727;
-      font-size: .9rem; }
-    .indexMain .sectionNewArrivals .card .card-body .cardTxt .cardGenre {
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      color: #272727;
-      font-size: .9rem;
-      word-spacing: 2px; }
-    .indexMain .sectionNewArrivals .card .card-body .cardTxt .cardKind {
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      color: #272727;
-      font-size: .9rem; }
-  .indexMain .sectionNewArrivals .card .card-body .cardTxtPrice {
-    list-style: none;
-    text-align: left;
-    flex-direction: column;
-    justify-content: start;
-    line-height: 2px; }
-    .indexMain .sectionNewArrivals .card .card-body .cardTxtPrice .cardPrice {
-      display: flex;
-      justify-content: end;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      font-style: italic;
-      color: #272727;
-      font-size: .9rem; }
-    .indexMain .sectionNewArrivals .card .card-body .cardTxtPrice .cardPriceOferta {
-      display: flex;
-      justify-content: end;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      font-style: italic;
-      color: #272727;
-      font-size: .6rem; }
-    .indexMain .sectionNewArrivals .card .card-body .cardTxtPrice .cardOferta {
-      display: flex;
-      justify-content: end;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
-      font-style: italic;
-      color: #3c813c;
-      font-size: .9rem; }
+    justify-content: end;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #272727;
+    font-size: .9rem; }
+  .sectionNewArrivals .card-body .cardTxtPrice .cardPriceOferta {
+    display: flex;
+    justify-content: end;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #272727;
+    font-size: .6rem; }
+  .sectionNewArrivals .card-body .cardTxtPrice .cardOferta {
+    display: flex;
+    justify-content: end;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #3c813c;
+    font-size: .9rem; }
 
 .collectionMain {
-  height: 100%; }
+  height: 100%;
+  padding: 5px; }
   .collectionMain .contendorTitleStyle {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
@@ -507,7 +519,8 @@ header nav .nav-item {
         color: #272727; }
 
 .shopMain {
-  height: 100vh; }
+  height: 100%;
+  padding: 5px; }
   .shopMain .sectionShop .txtTitle {
     font-size: 3rem;
     font-family: 'Nunito Sans', sans-serif;

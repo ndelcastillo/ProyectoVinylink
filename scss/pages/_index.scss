@@ -10,6 +10,7 @@
 .indexMain {
 
     .sectionClassicHits {
+
         .txtTitle {
             font-size: 2.5rem;
             font-family: 'Nunito Sans', sans-serif;
@@ -34,276 +35,282 @@
             border-radius: 10px 10px 0 0;
             border-width: .1px;
             border-color: lightgray;
-            box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+            // box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 
-            .card-top {
-                .card-img-top {
-                    border-radius: 10px 10px 0px 0px;
+            // &:hover {
+            //     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+            //     transition: all .5s;
+            // }
+        }
+
+        .card-top {
+            .card-img-top {
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            .btnAgregarCarrito {
+                color: rgb(69, 69, 69);
+                font-size: 12px;
+                padding: 2px 4px;
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 400;
+                border-radius: 0 0 10px 10px;
+                border-width: .1px;
+                border-color: lightgray;
+                opacity: calc(.9);
+                // background-color: rgb(140, 140, 140);
+
+                // i {
+                //     margin-top: 3px;
+                // }
+
+                &:hover {
+                    background-color: rgb(60, 129, 60);
+                    color: rgb(255, 255, 255);
                 }
+            }
+        }
 
-                .btnAgregarCarrito {
-                    color: rgb(69, 69, 69);
-                    font-size: 12px;
-                    padding: 2px 4px;
+
+        .card-body {
+
+            .cardTitle {
+                display: flex;
+                flex-direction: row;
+
+                .cardName {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 700;
+                    color: black;
+                }
+            }
+
+            .cardArtist {
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 500;
+                color: black;
+                line-height: 10px;
+            }
+
+            .cardTxt {
+                list-style: none;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                line-height: 2px;
+
+                .cardYear {
                     font-family: 'Nunito Sans', sans-serif;
                     font-weight: 400;
-                    border-radius: 0 0 10px 10px;
-                    border-width: .1px;
-                    border-color: lightgray;
-                    opacity: calc(.9);
-                    // background-color: rgb(140, 140, 140);
-
-                    // i {
-                    //     margin-top: 3px;
-                    // }
-
-                    &:hover {
-                        background-color: rgb(60, 129, 60);
-                        color: rgb(255, 255, 255);
-                    }
-                }
-            }
-
-
-            .card-body {
-
-                .cardTitle {
-                    display: flex;
-                    flex-direction: row;
-
-                    .cardName {
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 700;
-                        color: black;
-                    }
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
                 }
 
-                .cardArtist {
-                    font-family: 'Nunito Sans', sans-serif;
-                    font-weight: 500;
-                    color: black;
-                    line-height: 10px;
-                }
-
-                .cardTxt {
-                    list-style: none;
-                    text-align: left;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: start;
-                    line-height: 2px;
-
-                    .cardYear {
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        color: rgb(39, 39, 39);
-                        font-size: .9rem;
-                    }
-
-                    .cardGenre {
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        color: rgb(39, 39, 39);
-                        font-size: .9rem;
-                        word-spacing: 2px;
-                    }
-
-                    .cardKind {
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        color: rgb(39, 39, 39);
-                        font-size: .9rem;
-                    }
-                }
-
-                .cardTxtPrice {
-                    list-style: none;
-                    text-align: left;
-                    // display: flex;
-                    flex-direction: column;
-                    justify-content: start;
-                    line-height: 2px;
-
-                    .cardPrice {
-                        display: flex;
-                        justify-content: end;
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        font-style: italic;
-                        color: rgb(39, 39, 39);
-                        font-size: .9rem;
-                    }
-
-                    .cardPriceOferta {
-                        display: flex;
-                        justify-content: end;
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        font-style: italic;
-                        color: rgb(39, 39, 39);
-                        font-size: .6rem;
-                    }
-
-                    .cardOferta {
-                        display: flex;
-                        justify-content: end;
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 700;
-                        font-style: italic;
-                        color: rgb(60, 129, 60);
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .sectionNewArrivals {
-        .txtTitle {
-            font-size: 2.5rem;
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 800;
-            color: rgb(39, 39, 39);
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            margin-top: 100px;
-        }
-
-        .txtSubTitle {
-            text-align: center;
-            font-size: 1rem;
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 600;
-            color: orange;
-        }
-
-        .card {
-            border-radius: 10px 10px 0 0;
-            border-width: .1px;
-            border-color: lightgray;
-            box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-
-            .card-top {
-                .card-img-top {
-                    border-radius: 10px 10px 0px 0px;
-                }
-
-                .btnAgregarCarrito {
-                    color: rgb(69, 69, 69);
-                    font-size: 12px;
-                    padding: 2px 4px;
+                .cardGenre {
                     font-family: 'Nunito Sans', sans-serif;
                     font-weight: 400;
-                    border-radius: 0 0 10px 10px;
-                    border-width: .1px;
-                    border-color: lightgray;
-                    opacity: calc(.9);
-                    // background-color: rgb(140, 140, 140);
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                    word-spacing: 2px;
+                }
 
-                    // i {
-                    //     margin-top: 3px;
-                    // }
-
-                    &:hover {
-                        background-color: rgb(60, 129, 60);
-                        color: rgb(255, 255, 255);
-                    }
+                .cardKind {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 400;
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
                 }
             }
 
+            .cardTxtPrice {
+                list-style: none;
+                text-align: left;
+                // display: flex;
+                flex-direction: column;
+                justify-content: start;
+                line-height: 2px;
 
-            .card-body {
-
-                .cardTitle {
+                .cardPrice {
                     display: flex;
-                    flex-direction: row;
-
-                    .cardName {
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 700;
-                        color: black;
-                    }
-                }
-
-                .cardArtist {
+                    justify-content: end;
                     font-family: 'Nunito Sans', sans-serif;
-                    font-weight: 500;
-                    color: black;
-                    line-height: 10px;
+                    font-weight: 400;
+                    font-style: italic;
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                    text-decoration: line-through;
                 }
 
-                .cardTxt {
-                    list-style: none;
-                    text-align: left;
+                .cardPriceOferta {
                     display: flex;
-                    flex-direction: column;
-                    justify-content: start;
-                    line-height: 2px;
-
-                    .cardYear {
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        color: rgb(39, 39, 39);
-                        font-size: .9rem;
-                    }
-
-                    .cardGenre {
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        color: rgb(39, 39, 39);
-                        font-size: .9rem;
-                        word-spacing: 2px;
-                    }
-
-                    .cardKind {
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        color: rgb(39, 39, 39);
-                        font-size: .9rem;
-                    }
+                    justify-content: end;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 400;
+                    font-style: italic;
+                    color: rgb(39, 39, 39);
+                    font-size: .6rem;
                 }
 
-                .cardTxtPrice {
-                    list-style: none;
-                    text-align: left;
-                    // display: flex;
-                    flex-direction: column;
-                    justify-content: start;
-                    line-height: 2px;
-
-                    .cardPrice {
-                        display: flex;
-                        justify-content: end;
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        font-style: italic;
-                        color: rgb(39, 39, 39);
-                        font-size: .9rem;
-                    }
-
-                    .cardPriceOferta {
-                        display: flex;
-                        justify-content: end;
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        font-style: italic;
-                        color: rgb(39, 39, 39);
-                        font-size: .6rem;
-                    }
-
-                    .cardOferta {
-                        display: flex;
-                        justify-content: end;
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-weight: 400;
-                        font-style: italic;
-                        color: rgb(60, 129, 60);
-                        font-size: .9rem;
-                    }
+                .cardOferta {
+                    display: flex;
+                    justify-content: end;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 700;
+                    font-style: italic;
+                    color: rgb(60, 129, 60);
+                    font-size: 1rem;
                 }
             }
         }
     }
 }
+
+.sectionNewArrivals {
+    .txtTitle {
+        font-size: 2.5rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+        color: rgb(39, 39, 39);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .txtSubTitle {
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        color: orange;
+    }
+
+    .card {
+        border-radius: 10px 10px 0 0;
+        border-width: .1px;
+        border-color: lightgray;
+        // box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+        }
+
+        .card-top {
+            .card-img-top {
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            .btnAgregarCarrito {
+                color: rgb(69, 69, 69);
+                font-size: 12px;
+                padding: 2px 4px;
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 400;
+                border-radius: 0 0 10px 10px;
+                border-width: .1px;
+                border-color: lightgray;
+                opacity: calc(.9);
+                // background-color: rgb(140, 140, 140);
+
+                // i {
+                //     margin-top: 3px;
+                // }
+
+                &:hover {
+                    background-color: rgb(60, 129, 60);
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+
+
+        .card-body {
+
+            .cardTitle {
+                display: flex;
+                flex-direction: row;
+
+                .cardName {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 700;
+                    color: black;
+                }
+            }
+
+            .cardArtist {
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 500;
+                color: black;
+                line-height: 10px;
+            }
+
+            .cardTxt {
+                list-style: none;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                line-height: 2px;
+
+                .cardYear {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 400;
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                }
+
+                .cardGenre {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 400;
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                    word-spacing: 2px;
+                }
+
+                .cardKind {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 400;
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                }
+            }
+
+            .cardTxtPrice {
+                list-style: none;
+                text-align: left;
+                // display: flex;
+                flex-direction: column;
+                justify-content: start;
+                line-height: 2px;
+
+                .cardPrice {
+                    display: flex;
+                    justify-content: end;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 400;
+                    font-style: italic;
+                    color: rgb(39, 39, 39);
+                    font-size: .9rem;
+                }
+
+                .cardPriceOferta {
+                    display: flex;
+                    justify-content: end;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 400;
+                    font-style: italic;
+                    color: rgb(39, 39, 39);
+                    font-size: .6rem;
+                }
+
+                .cardOferta {
+                    display: flex;
+                    justify-content: end;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 400;
+                    font-style: italic;
+                    color: rgb(60, 129, 60);
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
