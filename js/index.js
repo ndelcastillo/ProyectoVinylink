@@ -113,7 +113,7 @@ for (const productos of productosPrecioDescuento) {
         <div class = "card position-relative" style="width:17rem">
             <div class="card-top">
                 <img src=${productos.img} class="card-img-top" alt="coverAlbum">
-                <button type="button" id=boton${productos.id} class="btn btnAgregarCarrito shadow-sm btn-outline-secondary position-absolute top-100 end-0 start-0">Add to cart</button>
+                <button type="button" id="boton${productos.id}" class="btn btnAgregarCarrito shadow-sm btn-outline-secondary position-absolute top-100 end-0 start-0">Add to cart</button>
            </div>
             <div class="card-body">
                     <div class="cardTitle">
@@ -131,18 +131,18 @@ for (const productos of productosPrecioDescuento) {
                 </div>
             </div>
         </div>`;
-
-    contenedorProductos.append(column)
+    contenedorProductos.appendChild(column)
 
     const boton = document.getElementById(`boton${productos.id}`)
     boton.addEventListener('click', () => {
+        carritoIndex(productos.id)
         Toastify({
             text: `"${productos.nombre}" added to cart`,
             duration: 3000,
             close: true,
             gravity: "bottom",
-            position: "right", 
-            stopOnFocus: true, 
+            position: "right",
+            stopOnFocus: true,
             style: {
                 color: "white",
                 background: "rgb(60, 129, 60)",
@@ -171,24 +171,4 @@ for (const productos of productosPrecioDescuento) {
     let productosArray = JSON.parse(productosAlmacenados);
     console.log(typeof productosArray, productosArray)
 }
-
-
-//========== PROMISE MAILING
-let tiempo = 7000;
-setTimeout(() => {
-    Swal.fire({
-        title: 'Vinyl Subscription',
-        text: '¡Get regular deliveries of vinyls at a discounted rate!',
-        input: 'email',
-        inputPlaceholder: 'Introduce your email',
-        showDenyButton: true,
-        denyButtonText: 'Cancel',
-        showConfirmButton: true,
-        confirmButtonText: 'Sign up',
-        // backdrop: "#d3d3d399"
-    })
-    if (email) {
-        Swal.fire(`Entered email: ${email}`)
-    }
-}, tiempo)
 

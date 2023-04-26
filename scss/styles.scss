@@ -7,6 +7,7 @@
 
 @import 'components/buttons';
 @import 'components/carousel';
+@import 'components/modal';
 
 @import 'layout/footer';
 @import 'layout/forms';
@@ -14,9 +15,11 @@
 @import 'layout/header';
 @import 'layout/navBar';
 @import 'layout/navigation';
-@import 'layout/sideBar';
+@import 'layout/sideBarCollection';
+@import 'layout/sideBarShop';
 
 @import 'pages/index';
+@import 'pages/contact';
 @import 'pages/collection';
 @import 'pages/shop';
 @import 'pages/shopCart';
@@ -30,6 +33,7 @@
 @import 'base/typography';
 
 @import 'queries/index';
+@import 'queries/contact';
 @import 'queries/collection';
 @import 'queries/shop';
 @import 'queries/shopCart';

@@ -1,0 +1,198 @@
+// /* Contenedor */
+// #producto-contenedor {
+//     // display: grid;
+//     // margin: 90px auto;
+//     // display: flex;
+//     // justify-content: space-evenly;
+//     // flex-wrap: wrap;
+// }
+
+// /* Modal */
+// .modal-container {
+//     position: absolute;
+//     top: 100%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     display: flex;
+//     align-items: start;
+//     justify-content: start;
+//     text-align: left;
+//     width: auto;
+//     height: auto;
+//     visibility: hidden;
+//     transition: opacity 0.3s ease;
+//     border-radius: 10px;
+//     z-index: 100;
+// }
+
+// /* hacer visibility el modal */
+// .modal-active {
+//     opacity: 1;
+//     visibility: visible;
+//     z-index: 5;
+// }
+
+// .modal-carrito {
+//     width: 40rem;
+//     height: 100%;
+//     text-align: left;
+//     background-color: whitesmoke;
+//     padding: 20px;
+//     border-radius: 10px 10px 10px 10px;
+
+//     .boxTitle {
+//         display: flex;
+//         justify-content: space-between;
+
+//         h3 {
+//             font-family: 'Nunito Sans', sans-serif;
+//             font-weight: 800;
+//         }
+
+//         span {
+//             font-family: 'Nunito Sans', sans-serif;
+//             font-weight: 500;
+//             font-size: 1.2rem;
+//             color: black;
+
+//             &:hover {
+//                 color: orange;
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+
+//     .hr {
+//         margin-top: 40px;
+//         color: black;
+//         background-color: black;
+//         width: 100%;
+//         height: 2px;
+//     }
+
+//     .carritoSubtotal {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         h6 {
+//             padding: 40px 0px;
+//             font-family: 'Nunito Sans', sans-serif;
+//         }
+
+//         span {
+//             font-family: 'Nunito Sans', sans-serif;
+//             font-weight: 800;
+//         }
+
+//     }
+
+//     button {
+//         margin-bottom: 10px;
+
+//         a {
+//             text-decoration: none;
+
+//             span {
+//                 font-family: 'Nunito Sans', sans-serif;
+//                 font-weight: 800;
+//                 color: whitesmoke;
+//             }
+
+//         }
+//     }
+// }
+
+
+// .productoEnCarrito {
+//     border-left: 5px solid orange;
+//     border-bottom-left-radius: 3px;
+//     border-top-left-radius: 3px;
+//     margin: 10px 0;
+//     padding: 10px 20px;
+
+//     .carrito {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+
+//         .infoCarrito {
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: center;
+//             align-items: center;
+
+//             .imgCarrito {
+//                 width: 80px;
+//                 margin-right: 20px;
+//             }
+
+//             .txtCarrito {
+//                 line-height: 4px;
+//                 margin-top: 20px;
+
+//                 .txtName {
+//                     font-size: 1rem;
+//                     font-family: 'Nunito Sans', sans-serif;
+//                     font-weight: 800;
+//                     color: black;
+//                 }
+
+//                 .txtPrice {
+//                     font-size: 1.1rem;
+//                     font-family: 'Nunito Sans', sans-serif;
+//                     font-weight: 800;
+//                     color: black;
+//                     text-decoration: none;
+//                 }
+
+//                 // .txtOferta{
+//                 //     font-size: 1.1rem;
+//                 //     font-family: 'Nunito Sans', sans-serif;
+//                 //     font-weight: 800;
+//                 //     color: rgb(60, 129, 60);
+//                 //     text-decoration: none;
+//                 // }
+
+//                 .txtType {
+//                     font-size: .8rem;
+//                     font-family: 'Nunito Sans', sans-serif;
+//                     font-weight: 600;
+//                     color: black;
+//                 }
+
+//             }
+//         }
+
+//         .infoButtons {
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: center;
+//             align-items: center;
+
+//             .btnCounter {
+//                 margin-right: 30px;
+
+//                 .btn {
+//                     padding: 2px 6px;
+//                     font-size: 12px;
+//                 }
+
+//                 .counter{
+//                    position: relative;
+//                    bottom: 3px;
+//                 }
+
+//             }
+
+//             .btnEliminar {
+//                 background-color: whitesmoke;
+//                 // color: lightblue;
+//                 border: none;
+//                 font-size: 20px;
+//             }
+//         }
+//     }
+
+// }

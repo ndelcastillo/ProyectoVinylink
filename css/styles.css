@@ -103,7 +103,7 @@ header nav .nav-item {
     text-align: left;
     padding: 0px 30px;
     list-style: none;
-    margin-top: 110px; }
+    margin-top: 155px; }
     .collectionSectionSidebar #sidebar .sidebarForm .boxTitle h1 {
       font-family: 'Nunito Sans', sans-serif;
       font-weight: 400;
@@ -181,9 +181,124 @@ header nav .nav-item {
     .custom-file-input label .btnUpload i {
       color: #5a5a5a; }
 
-.indexSectionPortada {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif; }
+
+#sidebarShop {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: whitesmoke;
+  transition: all 0.5s ease-in-out; }
+  #sidebarShop .sidebarShopInfo {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 20px;
+    margin-top: 90px; }
+    #sidebarShop .sidebarShopInfo .boxTitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px; }
+      #sidebarShop .sidebarShopInfo .boxTitle h3 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800; }
+      #sidebarShop .sidebarShopInfo .boxTitle span {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: black; }
+        #sidebarShop .sidebarShopInfo .boxTitle span:hover {
+          color: orange;
+          cursor: pointer; }
+    #sidebarShop .sidebarShopInfo .carritoSubtotal {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #sidebarShop .sidebarShopInfo .carritoSubtotal h6 {
+        padding: 20px 0px;
+        font-family: 'Nunito Sans', sans-serif; }
+      #sidebarShop .sidebarShopInfo .carritoSubtotal span {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800; }
+    #sidebarShop .sidebarShopInfo .btnCheckout a {
+      text-decoration: none; }
+      #sidebarShop .sidebarShopInfo .btnCheckout a button {
+        margin-bottom: 10px; }
+        #sidebarShop .sidebarShopInfo .btnCheckout a button span {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 800;
+          color: whitesmoke; }
+  #sidebarShop .productoEnCarrito .carritoAll .carritoHr {
+    width: 100%;
+    height: 1px;
+    background-color: black; }
+  #sidebarShop .productoEnCarrito .carritoAll .carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+    width: 400px;
+    margin-top: 18px; }
+    #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito {
+      display: flex;
+      flex-direction: row;
+      line-height: 3px; }
+      #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .imgCarrito {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px; }
+      #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .txtCarrito .txtName {
+        font-size: .9rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+        color: black; }
+      #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .txtCarrito .txtArtist {
+        font-size: .9rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+        color: black; }
+      #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .txtCarrito .txtPrice {
+        font-size: .9rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+        color: black;
+        text-decoration: none; }
+      #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .txtCarrito .txtType {
+        font-size: .8rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        color: black; }
+      #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .btnCounter {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        bottom: 4px; }
+        #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .btnCounter .btn {
+          padding: 2px 4px;
+          font-size: 8px; }
+        #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .btnCounter .counter {
+          font-size: 15px; }
+      #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .btnEliminar {
+        background-color: whitesmoke;
+        border: none;
+        font-size: 18px; }
+
+#sidebarShop.active {
+  right: 0; }
+
+.indexMain .indexSectionPortada {
   width: 100%; }
-  .indexSectionPortada img {
+  .indexMain .indexSectionPortada img {
     width: 100vw;
     height: 65vh; }
 
@@ -405,6 +520,10 @@ header nav .nav-item {
     font-style: italic;
     color: #3c813c;
     font-size: .9rem; }
+
+.contactMain {
+  height: 100vh;
+  padding: 5px; }
 
 .collectionMain {
   height: 100%;

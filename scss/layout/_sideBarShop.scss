@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#sidebarShop {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+
+    .sidebarShopInfo {
+        width: 100%;
+        height: auto;
+        text-align: left;
+        padding: 20px;
+        margin-top: 90px;
+
+        .boxTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            h3 {
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 800;
+            }
+
+            span {
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 500;
+                font-size: 1.2rem;
+                color: black;
+
+                &:hover {
+                    color: orange;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .carritoSubtotal {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h6 {
+                padding: 20px 0px;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+
+            span {
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 800;
+            }
+
+        }
+
+        .btnCheckout a {
+            text-decoration: none;
+
+            button {
+                margin-bottom: 10px;
+
+                span {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 800;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    .productoEnCarrito {
+        // border-left: 5px solid orange;
+        // border-bottom-left-radius: 3px;
+        // border-top-left-radius: 3px;
+        // margin: 10px 0;
+        // padding: 10px 20px;
+
+        .carritoAll {
+            .carritoHr {
+                width: 100%;
+                height: 1px;
+                background-color: black;
+            }
+
+            .carrito {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 90px;
+                width: 400px;
+                margin-top: 18px;
+
+                .infoCarrito {
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: center;
+                    // align-items: center;
+                    line-height: 3px;
+
+                    .imgCarrito {
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 20px;
+                    }
+
+                    .txtCarrito {
+                        // line-height: 15px;
+                        // margin-top: 20px;
+
+                        .txtName {
+                            font-size: .9rem;
+                            font-family: 'Nunito Sans', sans-serif;
+                            font-weight: 800;
+                            color: black;
+                        }
+
+                        .txtArtist {
+                            font-size: .9rem;
+                            font-family: 'Nunito Sans', sans-serif;
+                            font-weight: 800;
+                            color: black;
+                        }
+
+                        .txtPrice {
+                            font-size: .9rem;
+                            font-family: 'Nunito Sans', sans-serif;
+                            font-weight: 800;
+                            color: black;
+                            text-decoration: none;
+                        }
+
+                        // .txtOferta{
+                        //     font-size: 1.1rem;
+                        //     font-family: 'Nunito Sans', sans-serif;
+                        //     font-weight: 800;
+                        //     color: rgb(60, 129, 60);
+                        //     text-decoration: none;
+                        // }
+
+                        .txtType {
+                            font-size: .8rem;
+                            font-family: 'Nunito Sans', sans-serif;
+                            font-weight: 600;
+                            color: black;
+                        }
+
+                    }
+
+                    .btnCounter {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        position: relative;
+                        bottom: 4px;
+
+                        .btn {
+                            padding: 2px 4px;
+                            font-size: 8px;
+                        }
+
+                        .counter {
+                            font-size: 15px;
+                        }
+
+                    }
+
+                    .btnEliminar {
+                        background-color: whitesmoke;
+                        // color: lightblue;
+                        border: none;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#sidebarShop.active {
+    right: 0;
+}
+
+
+// .toggle-btn-shop {
+//     position: absolute;
+//     top: 0;
+//     right: 260px;
+//     top: 95px;
+//     color: red;
+// }
+
+// .toggle-btn-shop span {
+//     display: block;
+//     width: 30px;
+//     height: 5px;
+//     background: black;
+//     margin: 3px 0px;
+// }
