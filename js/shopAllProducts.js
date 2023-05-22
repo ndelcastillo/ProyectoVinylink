@@ -1,6 +1,6 @@
 const contenedorShop = document.getElementById("contenedor-productos-shop");
 
-const listaProductosShop = [
+const listaProductosAll = [
     {
         id: 1,
         nombre: "Bocanada",
@@ -54,7 +54,7 @@ const listaProductosShop = [
 const pedirProductosShop = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(listaProductosShop);
+            resolve(listaProductosAll);
         }, 1000);
     });
 };

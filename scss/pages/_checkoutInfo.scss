@@ -1,0 +1,246 @@
+.checkoutInfoMain {
+    height: 100vh;
+    padding: 5px;
+    margin-bottom: 150px;
+
+    .sectionForm {
+        margin: 150px 200px 100px 200px;
+
+        .boxIndex {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .indexCart {
+                text-decoration: none;
+                font-size: .8rem;
+                font-family: 'Nunito Sans';
+                color: rgb(240, 212, 120);
+            }
+
+            .indexInfo {
+                text-decoration: none;
+                font-size: .8rem;
+                font-family: 'Nunito Sans';
+                color: rgb(39, 39, 39);
+            }
+
+            .indexPay {
+                text-decoration: none;
+                font-size: .8rem;
+                font-family: 'Nunito Sans';
+                color: rgb(150, 150, 150);
+            }
+        }
+
+        .formCheckout {
+            .boxTitle1 {
+                margin-bottom: 20px;
+
+                h1 {
+                    font-size: 1.1rem;
+                    font-family: 'Nunito Sans',
+                }
+            }
+
+            .form-check label {
+                font-size: .8rem;
+                color: grey;
+            }
+
+            .boxTitle2 {
+                margin-top: 40px;
+                margin-bottom: 20px;
+
+                h1 {
+                    font-size: 1.1rem;
+                    font-family: 'Nunito Sans',
+                }
+            }
+
+            .checkoutBtn {
+                margin-bottom: 100px;
+
+                a {
+                    text-decoration: none;
+                    .checkoutBtnBack {
+                        font-size: .8rem;
+                        color: rgb(240, 212, 120);
+                        letter-spacing: 0px;
+                        font-family: 'Nunito Sans', sans-serif;
+                        font-weight: 400;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 14px 0px 0px 0px;
+                    }
+                }
+
+                button a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .carritoCheckout {
+            width: 100%;
+            height: auto;
+            text-align: left;
+
+            .carritoDiscount {
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                h6 {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-size: .8rem;
+                }
+
+                span {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 800;
+                }
+            }
+
+            .carritoSubTax {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0;
+                margin-top: 20px;
+
+                .carritoSubtotal {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h6 {
+                        font-family: 'Nunito Sans', sans-serif;
+                        font-size: .8rem;
+                    }
+
+                    span {
+                        font-family: 'Nunito Sans', sans-serif;
+                        font-weight: 400;
+                        font-size: .8rem;
+                    }
+                }
+
+                .carritoShipping {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h6 {
+                        font-family: 'Nunito Sans', sans-serif;
+                        font-size: .8rem;
+                    }
+
+                    span {
+                        font-family: 'Nunito Sans', sans-serif;
+                        font-weight: 400;
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+            .carritoTotal {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                h6 {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-size: .9rem;
+                }
+
+                span {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .productoEnCarrito {
+            // border-left: 5px solid orange;
+            // border-bottom-left-radius: 3px;
+            // border-top-left-radius: 3px;
+            // margin: 10px 0;
+            // padding: 10px 20px;
+
+            .carritoAll {
+                .carritoHr {
+                    width: 100%;
+                    height: 1px;
+                    background-color: black;
+                }
+
+                .carrito {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 15px;
+
+                    .txtCarrito {
+                        display: flex;
+                        flex-direction: row;
+                        line-height: 3px;
+
+                        .box1 {
+                            display: flex;
+                            flex-direction: column;
+                            width: 320px;
+
+                            .txtName {
+                                font-size: .8rem;
+                                font-family: 'Nunito Sans', sans-serif;
+                                font-weight: 400;
+                                color: black;
+                            }
+
+                            .txtArtist {
+                                font-size: .8rem;
+                                font-family: 'Nunito Sans', sans-serif;
+                                font-weight: 400;
+                                color: black;
+                            }
+
+                            .txtType {
+                                font-size: .7rem;
+                                font-family: 'Nunito Sans', sans-serif;
+                                font-weight: 400;
+                                color: black;
+                            }
+                        }
+
+                        .box2 {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            .txtQty {
+                                font-size: .8rem;
+                                font-family: 'Nunito Sans', sans-serif;
+                                font-weight: 400;
+                                color: black;
+                                text-decoration: none;
+                                margin-right: 15px;
+                            }
+
+                            .txtPrice {
+                                font-size: .8rem;
+                                font-family: 'Nunito Sans', sans-serif;
+                                font-weight: 400;
+                                color: black;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

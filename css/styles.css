@@ -1,75 +1,3 @@
-footer {
-  margin-top: 120px;
-  background-color: #f0f0f0;
-  padding: 70px;
-  display: flex;
-  justify-content: space-evenly; }
-  footer .row1 .col1 {
-    display: flex;
-    align-items: start;
-    justify-content: center; }
-    footer .row1 .col1 ul {
-      font-family: 'Nunito Sans', sans-serif;
-      list-style: none; }
-      footer .row1 .col1 ul li {
-        margin-top: 10px; }
-        footer .row1 .col1 ul li .liTitle {
-          color: #272727; }
-        footer .row1 .col1 ul li a {
-          text-decoration: none;
-          color: #a0a0a0; }
-          footer .row1 .col1 ul li a:hover {
-            color: #272727; }
-  footer .row1 .col2 {
-    display: flex;
-    align-items: start;
-    justify-content: center; }
-    footer .row1 .col2 ul {
-      font-family: 'Nunito Sans', sans-serif;
-      list-style: none; }
-      footer .row1 .col2 ul li {
-        margin-top: 5px;
-        line-height: 30px; }
-        footer .row1 .col2 ul li .liTitle {
-          color: #272727; }
-        footer .row1 .col2 ul li a {
-          text-decoration: none;
-          color: #a0a0a0; }
-      footer .row1 .col2 ul .redesSociales {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        margin-top: 30px; }
-        footer .row1 .col2 ul .redesSociales a i {
-          color: #a0a0a0; }
-          footer .row1 .col2 ul .redesSociales a i:hover {
-            color: #272727; }
-  footer .row1 .col3 {
-    display: flex;
-    align-items: start;
-    justify-content: center; }
-    footer .row1 .col3 ul {
-      font-family: 'Nunito Sans', sans-serif;
-      list-style: none; }
-      footer .row1 .col3 ul li {
-        margin-top: 10px; }
-        footer .row1 .col3 ul li .liTitle {
-          color: #272727; }
-        footer .row1 .col3 ul li a {
-          text-decoration: none;
-          color: #a0a0a0; }
-          footer .row1 .col3 ul li a:hover {
-            color: #272727; }
-
-header nav .navbar-brand {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600; }
-
-header nav .nav-item {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400; }
-
 .collectionSectionSidebar #sidebar {
   z-index: 1;
   position: fixed;
@@ -180,6 +108,78 @@ header nav .nav-item {
       background-color: #5a5a5a; }
     .custom-file-input label .btnUpload i {
       color: #5a5a5a; }
+
+footer {
+  margin-top: 120px;
+  background-color: #f0f0f0;
+  padding: 70px;
+  display: flex;
+  justify-content: space-evenly; }
+  footer .row1 .col1 {
+    display: flex;
+    align-items: start;
+    justify-content: center; }
+    footer .row1 .col1 ul {
+      font-family: 'Nunito Sans', sans-serif;
+      list-style: none; }
+      footer .row1 .col1 ul li {
+        margin-top: 10px; }
+        footer .row1 .col1 ul li .liTitle {
+          color: #272727; }
+        footer .row1 .col1 ul li a {
+          text-decoration: none;
+          color: #a0a0a0; }
+          footer .row1 .col1 ul li a:hover {
+            color: #272727; }
+  footer .row1 .col2 {
+    display: flex;
+    align-items: start;
+    justify-content: center; }
+    footer .row1 .col2 ul {
+      font-family: 'Nunito Sans', sans-serif;
+      list-style: none; }
+      footer .row1 .col2 ul li {
+        margin-top: 5px;
+        line-height: 30px; }
+        footer .row1 .col2 ul li .liTitle {
+          color: #272727; }
+        footer .row1 .col2 ul li a {
+          text-decoration: none;
+          color: #a0a0a0; }
+      footer .row1 .col2 ul .redesSociales {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-top: 30px; }
+        footer .row1 .col2 ul .redesSociales a i {
+          color: #a0a0a0; }
+          footer .row1 .col2 ul .redesSociales a i:hover {
+            color: #272727; }
+  footer .row1 .col3 {
+    display: flex;
+    align-items: start;
+    justify-content: center; }
+    footer .row1 .col3 ul {
+      font-family: 'Nunito Sans', sans-serif;
+      list-style: none; }
+      footer .row1 .col3 ul li {
+        margin-top: 10px; }
+        footer .row1 .col3 ul li .liTitle {
+          color: #272727; }
+        footer .row1 .col3 ul li a {
+          text-decoration: none;
+          color: #a0a0a0; }
+          footer .row1 .col3 ul li a:hover {
+            color: #272727; }
+
+header nav .navbar-brand {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600; }
+
+header nav .nav-item {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400; }
 
 * {
   margin: 0;
@@ -292,6 +292,13 @@ header nav .nav-item {
         background-color: whitesmoke;
         border: none;
         font-size: 18px; }
+      #sidebarShop .productoEnCarrito .carritoAll .carrito .infoCarrito .txtSubtotal {
+        margin: .5rem auto;
+        padding-left: 150px;
+        font-size: .9rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        color: black; }
 
 #sidebarShop.active {
   right: 0; }
@@ -421,7 +428,7 @@ header nav .nav-item {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-top: 100px; }
+  margin-top: 80px; }
 
 .sectionNewArrivals .txtSubTitle {
   text-align: center;
@@ -521,9 +528,375 @@ header nav .nav-item {
     color: #3c813c;
     font-size: .9rem; }
 
-.contactMain {
+.checkoutInfoMain {
   height: 100vh;
-  padding: 5px; }
+  padding: 5px;
+  margin-bottom: 150px; }
+  .checkoutInfoMain .sectionForm {
+    margin: 150px 200px 100px 200px; }
+    .checkoutInfoMain .sectionForm .boxIndex {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .checkoutInfoMain .sectionForm .boxIndex .indexCart {
+        text-decoration: none;
+        font-size: .8rem;
+        font-family: 'Nunito Sans';
+        color: #f0d478; }
+      .checkoutInfoMain .sectionForm .boxIndex .indexInfo {
+        text-decoration: none;
+        font-size: .8rem;
+        font-family: 'Nunito Sans';
+        color: #272727; }
+      .checkoutInfoMain .sectionForm .boxIndex .indexPay {
+        text-decoration: none;
+        font-size: .8rem;
+        font-family: 'Nunito Sans';
+        color: #969696; }
+    .checkoutInfoMain .sectionForm .formCheckout .boxTitle1 {
+      margin-bottom: 20px; }
+      .checkoutInfoMain .sectionForm .formCheckout .boxTitle1 h1 {
+        font-size: 1.1rem;
+        font-family: "Nunito Sans"; }
+    .checkoutInfoMain .sectionForm .formCheckout .form-check label {
+      font-size: .8rem;
+      color: grey; }
+    .checkoutInfoMain .sectionForm .formCheckout .boxTitle2 {
+      margin-top: 40px;
+      margin-bottom: 20px; }
+      .checkoutInfoMain .sectionForm .formCheckout .boxTitle2 h1 {
+        font-size: 1.1rem;
+        font-family: "Nunito Sans"; }
+    .checkoutInfoMain .sectionForm .formCheckout .checkoutBtn {
+      margin-bottom: 100px; }
+      .checkoutInfoMain .sectionForm .formCheckout .checkoutBtn a {
+        text-decoration: none; }
+        .checkoutInfoMain .sectionForm .formCheckout .checkoutBtn a .checkoutBtnBack {
+          font-size: .8rem;
+          color: #f0d478;
+          letter-spacing: 0px;
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 400;
+          align-items: center;
+          justify-content: center;
+          margin: 14px 0px 0px 0px; }
+      .checkoutInfoMain .sectionForm .formCheckout .checkoutBtn button a {
+        color: white;
+        text-decoration: none; }
+    .checkoutInfoMain .sectionForm .carritoCheckout {
+      width: 100%;
+      height: auto;
+      text-align: left; }
+      .checkoutInfoMain .sectionForm .carritoCheckout .carritoDiscount {
+        margin-top: 20px;
+        margin-bottom: 20px; }
+        .checkoutInfoMain .sectionForm .carritoCheckout .carritoDiscount h6 {
+          font-family: 'Nunito Sans', sans-serif;
+          font-size: .8rem; }
+        .checkoutInfoMain .sectionForm .carritoCheckout .carritoDiscount span {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 800; }
+      .checkoutInfoMain .sectionForm .carritoCheckout .carritoSubTax {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-top: 20px; }
+        .checkoutInfoMain .sectionForm .carritoCheckout .carritoSubTax .carritoSubtotal {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; }
+          .checkoutInfoMain .sectionForm .carritoCheckout .carritoSubTax .carritoSubtotal h6 {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: .8rem; }
+          .checkoutInfoMain .sectionForm .carritoCheckout .carritoSubTax .carritoSubtotal span {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            font-size: .8rem; }
+        .checkoutInfoMain .sectionForm .carritoCheckout .carritoSubTax .carritoShipping {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; }
+          .checkoutInfoMain .sectionForm .carritoCheckout .carritoSubTax .carritoShipping h6 {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: .8rem; }
+          .checkoutInfoMain .sectionForm .carritoCheckout .carritoSubTax .carritoShipping span {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            font-size: .8rem; }
+      .checkoutInfoMain .sectionForm .carritoCheckout .carritoTotal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .checkoutInfoMain .sectionForm .carritoCheckout .carritoTotal h6 {
+          font-family: 'Nunito Sans', sans-serif;
+          font-size: .9rem; }
+        .checkoutInfoMain .sectionForm .carritoCheckout .carritoTotal span {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 500;
+          font-size: 1.2rem; }
+    .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carritoHr {
+      width: 100%;
+      height: 1px;
+      background-color: black; }
+    .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carrito {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px; }
+      .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito {
+        display: flex;
+        flex-direction: row;
+        line-height: 3px; }
+        .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box1 {
+          display: flex;
+          flex-direction: column;
+          width: 320px; }
+          .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box1 .txtName {
+            font-size: .8rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black; }
+          .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box1 .txtArtist {
+            font-size: .8rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black; }
+          .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box1 .txtType {
+            font-size: .7rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black; }
+        .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box2 {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box2 .txtQty {
+            font-size: .8rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black;
+            text-decoration: none;
+            margin-right: 15px; }
+          .checkoutInfoMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box2 .txtPrice {
+            font-size: .8rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black;
+            text-decoration: none; }
+
+.checkoutPayMain {
+  width: 100%;
+  height: auto;
+  margin-bottom: 200px; }
+  .checkoutPayMain .sectionForm {
+    margin: 150px 200px 0px 200px; }
+    .checkoutPayMain .sectionForm .boxIndex {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .checkoutPayMain .sectionForm .boxIndex .indexCart {
+        text-decoration: none;
+        font-size: .8rem;
+        font-family: 'Nunito Sans';
+        color: #f0d478; }
+      .checkoutPayMain .sectionForm .boxIndex .indexInfo {
+        text-decoration: none;
+        font-size: .8rem;
+        font-family: 'Nunito Sans';
+        color: #f0d478; }
+      .checkoutPayMain .sectionForm .boxIndex .indexPay {
+        text-decoration: none;
+        font-size: .8rem;
+        font-family: 'Nunito Sans';
+        color: #272727; }
+    .checkoutPayMain .sectionForm .boxInfo {
+      margin: 0 0 40px 0;
+      border-radius: 10px 10px 10px 10px;
+      border: solid 1px lightgray;
+      padding: 0 20px 0 20px; }
+      .checkoutPayMain .sectionForm .boxInfo .boxInfoName {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 0 0 0; }
+        .checkoutPayMain .sectionForm .boxInfo .boxInfoName p {
+          font-size: .8rem;
+          margin-right: 60px; }
+      .checkoutPayMain .sectionForm .boxInfo .boxInfoContact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 0 0 0; }
+        .checkoutPayMain .sectionForm .boxInfo .boxInfoContact p {
+          font-size: .8rem;
+          margin-right: 50px; }
+      .checkoutPayMain .sectionForm .boxInfo .boxInfoShipping {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 0 0 0; }
+        .checkoutPayMain .sectionForm .boxInfo .boxInfoShipping p {
+          font-size: .8rem;
+          margin-right: 55px; }
+      .checkoutPayMain .sectionForm .boxInfo hr {
+        margin: 0 0 0 0;
+        opacity: 0.2; }
+    .checkoutPayMain .sectionForm .formCheckout .boxTitle1 {
+      margin-bottom: 20px; }
+      .checkoutPayMain .sectionForm .formCheckout .boxTitle1 h1 {
+        font-size: 1.1rem;
+        font-family: "Nunito Sans"; }
+      .checkoutPayMain .sectionForm .formCheckout .boxTitle1 p {
+        font-size: .8rem;
+        color: grey; }
+    .checkoutPayMain .sectionForm .formCheckout .accordion-pay .credit-card .accordion-header .accordion-button i {
+      font-size: 1rem; }
+    .checkoutPayMain .sectionForm .formCheckout .accordion-pay .credit-card .accordion-header .accordion-button .title1 {
+      font-size: .8rem; }
+    .checkoutPayMain .sectionForm .formCheckout .accordion-pay .credit-card .accordion-header .accordion-button span img {
+      width: 80px;
+      height: auto;
+      position: relative;
+      bottom: 2px;
+      margin-left: 260px; }
+    .checkoutPayMain .sectionForm .formCheckout .accordion-pay .mercado-pago .accordion-header .accordion-button i {
+      font-size: 1rem; }
+    .checkoutPayMain .sectionForm .formCheckout .accordion-pay .mercado-pago .accordion-header .accordion-button .title1 {
+      font-size: .8rem; }
+    .checkoutPayMain .sectionForm .formCheckout .accordion-pay .mercado-pago .accordion-header .accordion-button span img {
+      width: 100px;
+      height: auto; }
+    .checkoutPayMain .sectionForm .formCheckout .form-check label {
+      font-size: .8rem;
+      color: grey; }
+    .checkoutPayMain .sectionForm .formCheckout .boxTitle2 {
+      margin-top: 40px;
+      margin-bottom: 20px; }
+      .checkoutPayMain .sectionForm .formCheckout .boxTitle2 h1 {
+        font-size: 1.1rem;
+        font-family: "Nunito Sans"; }
+    .checkoutPayMain .sectionForm .formCheckout .checkoutBtn {
+      margin-bottom: 100px; }
+      .checkoutPayMain .sectionForm .formCheckout .checkoutBtn a {
+        text-decoration: none; }
+        .checkoutPayMain .sectionForm .formCheckout .checkoutBtn a .checkoutBtnBack {
+          font-size: .8rem;
+          color: #f0d478;
+          letter-spacing: 0px;
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 400;
+          align-items: center;
+          justify-content: center;
+          margin: 14px 0px 0px 0px; }
+      .checkoutPayMain .sectionForm .formCheckout .checkoutBtn button a {
+        color: white;
+        text-decoration: none; }
+    .checkoutPayMain .sectionForm .carritoCheckout {
+      width: 100%;
+      height: auto;
+      text-align: left; }
+      .checkoutPayMain .sectionForm .carritoCheckout .carritoDiscount {
+        margin-top: 20px;
+        margin-bottom: 20px; }
+        .checkoutPayMain .sectionForm .carritoCheckout .carritoDiscount h6 {
+          font-family: 'Nunito Sans', sans-serif;
+          font-size: .8rem; }
+        .checkoutPayMain .sectionForm .carritoCheckout .carritoDiscount span {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 800; }
+      .checkoutPayMain .sectionForm .carritoCheckout .carritoSubTax {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-top: 20px; }
+        .checkoutPayMain .sectionForm .carritoCheckout .carritoSubTax .carritoSubtotal {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; }
+          .checkoutPayMain .sectionForm .carritoCheckout .carritoSubTax .carritoSubtotal h6 {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: .8rem; }
+          .checkoutPayMain .sectionForm .carritoCheckout .carritoSubTax .carritoSubtotal span {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            font-size: .8rem; }
+        .checkoutPayMain .sectionForm .carritoCheckout .carritoSubTax .carritoShipping {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; }
+          .checkoutPayMain .sectionForm .carritoCheckout .carritoSubTax .carritoShipping h6 {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: .8rem; }
+          .checkoutPayMain .sectionForm .carritoCheckout .carritoSubTax .carritoShipping span {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            font-size: .8rem; }
+      .checkoutPayMain .sectionForm .carritoCheckout .carritoTotal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .checkoutPayMain .sectionForm .carritoCheckout .carritoTotal h6 {
+          font-family: 'Nunito Sans', sans-serif;
+          font-size: .9rem; }
+        .checkoutPayMain .sectionForm .carritoCheckout .carritoTotal span {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 500;
+          font-size: 1.2rem; }
+    .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carritoHr {
+      width: 100%;
+      height: 1px;
+      background-color: black; }
+    .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carrito {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px; }
+      .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito {
+        display: flex;
+        flex-direction: row;
+        line-height: 3px; }
+        .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box1 {
+          display: flex;
+          flex-direction: column;
+          width: 320px; }
+          .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box1 .txtName {
+            font-size: .8rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black; }
+          .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box1 .txtArtist {
+            font-size: .8rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black; }
+          .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box1 .txtType {
+            font-size: .7rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black; }
+        .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box2 {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box2 .txtQty {
+            font-size: .8rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black;
+            text-decoration: none;
+            margin-right: 15px; }
+          .checkoutPayMain .sectionForm .productoEnCarrito .carritoAll .carrito .txtCarrito .box2 .txtPrice {
+            font-size: .8rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            color: black;
+            text-decoration: none; }
 
 .collectionMain {
   height: 100%;

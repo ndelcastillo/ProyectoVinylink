@@ -51,12 +51,15 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-secondary btn-sm me-3" type="submit"><i class='bx bx-search mt-1'></i></button>
+                        <input class="form-control" type="search" placeholder="Search our store" aria-label="Search">
                     </form>
                     <ul class="navbar-nav mb-lg-0 ms-3">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./shopCart.html"><i class='bx bx-shopping-bag'></i></a>
+                            <button class="nav-link" id="open" onclick="toggleSidebar()">
+                                <i class='bx bx-shopping-bag'></i>
+                                <span id="contador-carrito">0</span>
+                            </button>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./user.html"><i class='bx bx-user'></i></a>
@@ -170,10 +173,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!-- SWEETALERT2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/user.js"></script>
     <!-- JS -->
-    <!-- <script src="../js/formProduct.js"></script>
-    <script src="../js/sideBar.js"></script> -->
+    <script src="../js/userLogin.js"></script>
 </body>
 
 </html>

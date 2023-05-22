@@ -254,7 +254,7 @@ function pintarProductos() {
 
 function actualizarProductosStorage() {
     let productosJSON = JSON.stringify(productos)
-    localStorage.setItem("productos", productosJSON)
+    localStorage.setItem("colleccion", productosJSON)
 }
 
 // function actualizarUsuarioStorage() {
@@ -262,7 +262,7 @@ function actualizarProductosStorage() {
 // }
 
 function obtenerProductosStorage() {
-    let productosJSON = localStorage.getItem("productos")
+    let productosJSON = localStorage.getItem("colleccion")
     if (productosJSON) {
         productos = JSON.parse(productosJSON);
         pintarProductos();

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- SWEETALERT2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- TOASTIFY-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- LUXON-->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+    <!-- CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/images/logo/opc2.ico" type="image/x-icon">
+    <title>Vinylink</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-dark bg-black navbar-expand-lg p-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Vinylink</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./collection.html">My Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./shop.html">Shop</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-secondary btn-sm me-3" type="submit"><i
+                                class='bx bx-search mt-1'></i></button>
+                        <input class="form-control" type="search" placeholder="Search our store" aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav mb-lg-0 ms-3">
+                        <li class="nav-item">
+                            <button class="nav-link" id="open" onclick="toggleSidebar()">
+                                <i class='bx bx-shopping-bag'></i>
+                                <span id="contador-carrito">0</span>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./user.html"><i class='bx bx-user'></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="checkoutPayMain">
+        <section class="sectionForm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="boxIndex mb-2 ms-1">
+                            <a class="indexCart ms-2" href="../index.html">
+                                <p>Cart</p>
+                            </a>
+                            <p class="ms-2 mt-1"><i class='bx bx-chevron-right'></i></p>
+                            <a class="indexInfo ms-2" href="../html/checkoutInfo.html">
+                                <p>Information</p>
+                            </a>
+                            <p class="ms-2 mt-1"><i class='bx bx-chevron-right'></i></p>
+                            <a class="indexPay ms-2" href="">
+                                <p>Payment</p>
+                            </a>
+                        </div>
+                        <div class="boxInfo">
+                            <div class="boxInfoName">
+                                <p class="">Name</p>
+                                <p id="checkout-pay-info-name"></p>
+                            </div>
+                            <hr>
+                            <div class="boxInfoContact">
+                                <p class="">Contact</p>
+                                <p id="checkout-pay-info-contact"></p>
+                            </div>
+                            <hr>
+                            <div class="boxInfoShipping">
+                                <p class="">Ship to</p>
+                                <p id="checkout-pay-info-shipping"></p>
+                            </div>
+                        </div>
+                        <form class="formCheckout ms-2" id="formularioCheckout">
+                            <div class="boxTitle1">
+                                <h1>Payment</h1>
+                                <p>All transactions are secure and ecrypted</p>
+                            </div>
+                            <div class="accordion mb-5 accordion-pay" id="accordionExample">
+                                <div class="accordion-item credit-card">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <!-- <span>
+                                                <i class='bx bx-credit-card'></i>
+                                            </span> -->
+                                            <span class="title1 ms-2">Credit/ Debit card</span>
+                                            <span><img
+                                                    src="../assets/images/medios-de-pagos/tarjetas-credito-logos-varios.png"
+                                                    alt=""></span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mercado-pago">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            <!-- <span>
+                                                <i class='bx bx-mobile-alt'></i>
+                                            </span> -->
+                                            <!-- <span class="title1 ms-2">Mercado pago</span> -->
+                                            <span><img
+                                                    src="../assets/images/medios-de-pagos/version-horizontal-large-logo-mercado-pago.webp"
+                                                    alt=""></span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="true"
+                                            aria-controls="collapseThree">
+                                            <span>
+                                                <i class='bx bx-money'></i>
+                                            </span>
+                                            <span class="title1 ms-2">Cash</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="boxTitle2">
+                                <div class="boxTitle1">
+                                    <h1>Billing Address</h1>
+                                    <p>Select the address that matches your card or payment method.</p>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Same as shipping address
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Use a different billing address
+                                </label>
+                            </div>
+                            <div class="boxTitle2">
+                                <h1>Remember Me</h1>
+                            </div>
+                            <div class="form-check mb-4 mt-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Save my information for a faster checkout
+                                </label>
+                            </div>
+                            <div class="checkoutBtn d-flex flex-row justify-content-between align-items-center">
+                                <div class="mb-2">
+                                    <a href="../html/checkoutInfo.html">
+                                        <p class="checkoutBtnBack">← Return to information</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <button type="submit" id="btn-checkout-pay" class="btn btn-dark btn-sm"><a
+                                            href="./checkoutDone.html"> Pay now </a></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 ms-5 ps-5">
+                        <div class="carritoCheckout">
+                            <div id="checkout-carrito-compras" class="row"></div>
+                            <hr>
+                            <div class="carritoDiscount">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control" type="search" placeholder="Discount code"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-secondary btn-sm ms-3" type="submit">Apply</button>
+                                </form>
+                            </div>
+                            <hr>
+                            <div class="carritoSubTax">
+                                <div class="carritoSubtotal">
+                                    <h6>Subtotal</h6>
+                                    <span id="subtotal-carrito">$</span>
+                                </div>
+                                <div class="carritoShipping">
+                                    <h6>Shipping</h6>
+                                    <span id="shipping-carrito">$</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="carritoTotal">
+                                <h6>Total</h6>
+                                <span id="total-carrito">$</span>
+                            </div>
+                            </hr>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row row1">
+                <div class="col-lg-4 col-6 col1">
+                    <ul>
+                        <li class="liTitle mb-4">Help</li>
+                        <li><a href="#">F.A.Q.</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 d-lg-block d-none col2">
+                    <ul>
+                        <li class="liTitle mb-4">Our Story</li>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sequi id explicabo
+                                officia ex reprehenderit magni eveniet fugit, commodi dolorum distinctio tenetur
+                                accusamus
+                                nobis voluptatum sunt sint iure! Illum, tempora.</a></li>
+                        <li class="redesSociales">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class='bx bxl-facebook bx-sm me-3'></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter bx-sm me-3'></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class='bx bxl-instagram bx-sm me-3'></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i
+                                    class='bx bxl-youtube bx-sm me-3'></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-6 col3">
+                    <ul>
+                        <li class="liTitle mb-4">Information</li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Distribution</a></li>
+                        <li><a href="#">Submissions</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOASTIFY-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- SWEETALERT2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JS -->
+    <script src="../js/navShopCheckoutPay.js"></script>
+</body>
+
+</html>

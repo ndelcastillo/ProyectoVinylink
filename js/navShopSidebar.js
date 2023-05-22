@@ -16,6 +16,20 @@
 //     sidebarShop.classList.toggle('sidebarShop-active')
 // })
 
-function toggleSidebar() {
+function toggleSidebarOpen() {
     document.getElementById('sidebarShop').classList.toggle('active')
 }
+
+function toggleSidebarClose() {
+    document.getElementById('sidebarShop').classList.toggle('active')
+}
+
+
+// const btnCloseSidebar = document.getElementById('close');
+// const sidebar = document.getElementById('sidebarShop');
+
+// btnCloseSidebar.addEventListener('click', () => {
+//     sidebar.style.display = 'none'
+// })
+
+
