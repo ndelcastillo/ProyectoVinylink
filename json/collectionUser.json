@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1",
+        "idUser": "4",
+        "nombre": "The Drak Side Of The Moon",
+        "artista": "Pink Floyd",
+        "anio": "2016",
+        "genero": "Rock",
+        "tipo": "LP",
+        "precio": "5000",
+        "oferta": "",
+        "cantidad": "0",
+        "stock": "3",
+        "new": "true",
+        "img": "assets/images/productos/the-dark-side-of-the-moon-pink-floyd.jpeg"
+    },
+    {
+        "id": "2",
+        "idUser": "4",
+        "nombre": "Side Of The Moon",
+        "artista": "Pink Floyd",
+        "anio": "2016",
+        "genero": "Rock",
+        "tipo": "LP",
+        "precio": "5000",
+        "oferta": "",
+        "cantidad": "0",
+        "stock": "3",
+        "new": "true",
+        "img": "assets/images/productos/the-dark-side-of-the-moon-pink-floyd.jpeg"
+    },
+    {
+        "id": "3",
+        "idUser": "5",
+        "nombre": "The Drak Side Of The ",
+        "artista": "Pink Floyd",
+        "anio": "2016",
+        "genero": "Rock",
+        "tipo": "LP",
+        "precio": "5000",
+        "oferta": "",
+        "cantidad": "0",
+        "stock": "3",
+        "new": "true",
+        "img": "assets/images/productos/the-dark-side-of-the-moon-pink-floyd.jpeg"
+    }
+]

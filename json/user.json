@@ -1,0 +1,34 @@
+[
+    {
+        "idUsuario": "1",
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "edad": "20",
+        "correo": "juanperez@gmail.com",
+        "contrasena": "hola1234"
+    },
+    {
+        "idUsuario": "2",
+        "nombre": "Marcos",
+        "apellido": "Fernandez",
+        "edad": "17",
+        "correo": "marcosfernandez@gmail.com",
+        "contrasena": "chau1234"
+    },
+    {
+        "idUsuario": "3",
+        "nombre": "Julio",
+        "apellido": "Veo",
+        "edad": "22",
+        "correo": "julioveo@gmail.com",
+        "contrasena": "buenas1234"
+    },
+    {
+        "idUsuario": "4",
+        "nombre": "Ana",
+        "apellido": "Martin",
+        "edad": "24",
+        "correo": "anamartin@gmail.com",
+        "contrasena": "nose1234"
+    }
+]

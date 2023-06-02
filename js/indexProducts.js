@@ -10,6 +10,7 @@ const listaProductos = [
         oferta: '',
         cantidad: 0,
         stock: 3,
+        new: true,
         img: "assets/images/productos/the-dark-side-of-the-moon-pink-floyd.jpeg"
     },
     {
@@ -23,6 +24,7 @@ const listaProductos = [
         oferta: '',
         cantidad: 0,
         stock: 3,
+        new: false,
         img: "assets/images/productos/memento-mori-depeche-mode.jpeg"
     },
     {
